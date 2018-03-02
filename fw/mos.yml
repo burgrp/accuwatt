@@ -1,0 +1,19 @@
+author: DEVICE-FARM
+description: A simple test on ESP8266 with two LEDs connected - Orange on pin 4 and Blue on pin 5
+version: 1.0
+arch: esp8266
+
+tags:
+  - c
+
+sources:
+  - src
+
+filesystem:
+  - fs
+
+libs:
+  - origin: ../../mg-df-core
+  - origin: ../../mg-df-ds18b20
+  
+skeleton_version: 2017-05-18
