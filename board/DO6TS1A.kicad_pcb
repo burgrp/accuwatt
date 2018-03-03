@@ -3,7 +3,7 @@
   (general
     (links 75)
     (no_connects 0)
-    (area 79.949999 84.949999 140.050001 140.050001)
+    (area 78.252381 70.3 187.85 140.050001)
     (thickness 1.6)
     (drawings 17)
     (tracks 258)
@@ -24,7 +24,7 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
+    (40 Dwgs.User user)
     (41 Cmts.User user)
     (42 Eco1.User user)
     (43 Eco2.User user)
@@ -70,7 +70,7 @@
     (grid_origin 80 140)
     (visible_elements FFFEEF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -91,9 +91,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerber/))
   )
 
   (net 0 "")
