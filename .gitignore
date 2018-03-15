@@ -6,3 +6,5 @@ build
 nbproject
 node_modules
 
+fw/deps
+fw/build
