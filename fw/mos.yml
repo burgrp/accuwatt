@@ -14,12 +14,15 @@ filesystem:
 
 libs:
   - origin: ../../mg-df-core
-  #- origin: ../../mg-df-ds18b20
+  - origin: ../../mg-df-ds18b20
   - origin: https://github.com/mongoose-os-libs/i2c
   - origin: https://github.com/mongoose-os-libs/rpc-service-i2c
 
 config_schema:
   - ["i2c.enable", true]
   - ["i2c.debug", true]
-  
+  - ["heating", "o", {title: "Heating settings"}]
+  - ["heating.blockingTemp", "i", {title: "Heating will be set to zero and blocked for remote updates when temperature goes over this value"}]
+  - ["heating.blockingTemp", 80]
+    
 skeleton_version: 2017-05-18
