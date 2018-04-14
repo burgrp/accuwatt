@@ -1,9 +1,11 @@
 /* global RegisterGPO, Register, RegisterDS18B20 */
 
 load('api_config.js');
+load("api_gpio.js");
 
 load("api_df_reg.js");
 load("api_df_reg_gpo.js");
+load("api_df_reg_gpi.js");
 load("api_df_reg_ds18b20.js");
 load("api_df_pcf8574.js");
 
@@ -48,3 +50,5 @@ tempReg.observer = {
         this.origObserver.callback(temp);        
     }
 }
+
+Register.add("Tariff", RegisterGPI.create(5, GPIO.PULL_DOWN));
