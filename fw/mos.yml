@@ -21,8 +21,14 @@ libs:
 config_schema:
   - ["i2c.enable", true]
   - ["i2c.debug", true]
-  - ["heating", "o", {title: "Heating settings"}]
-  - ["heating.blockingTemp", "i", {title: "Heating will be set to zero and blocked for remote updates when temperature goes over this value"}]
-  - ["heating.blockingTemp", 80]
-    
+  - ["heating", "o", {title: "Electric Heating"}]
+  - ["heating.enabled", "b", true, {"title": "Is heating enabled?"}]
+  - ["heating.target", "i", 20, {"title": "Target temperature in Celsius"}]
+  - ["heating.relay0", "i", 0, {"title": "First relay PCF port number"}]
+  - ["heating.relay5", "i", 5, {"title": "Last relay PCF port number"}]
+  - ["heating.led1", "i", 6, {"title": "LED1 PCF port number"}]
+  - ["heating.led2", "i", 7, {"title": "LED2 PCF port number"}]
+  - ["heating.tickms", "i", 2000, {"title": "Tick period in ms"}]
+  - ["heating.tariff", "i", 5, {"title": "Tariff sensor pin number"}]
+
 skeleton_version: 2017-05-18

@@ -12,8 +12,6 @@ let RegisterGPI = {
         return {
             pin: pin,
 
-
-
             get: function () {
                 let value = GPIO.read(this.pin) === 1;
                 this.observer.callback(value);
