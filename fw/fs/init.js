@@ -10,6 +10,7 @@ load("api_df_pcf8574.js");
 load("api_df_reg.js");
 load("api_df_reg_gpo.js");
 load("api_df_reg_cfg.js");
+load("api_df_reg_var.js");
 
 
 let regTarget = Register.add("target", RegisterConfig.create("heating.target", function(value) {
@@ -36,6 +37,9 @@ let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled"
     };
 }));
 
+let regTemp = Register.add("temp", RegisterVariable.create(undefined));
+let regTariff = Register.add("tariff", RegisterVariable.create(undefined));
+
 let i2c = I2C.get();
 
 let pcfAddress = Cfg.get("heating.pcf8574");
@@ -60,20 +64,24 @@ print("Tick period set to", tickMs, "ms");
 GPIO.set_mode(pinTariff, GPIO.MODE_INPUT);
 GPIO.set_pull(pinTariff, GPIO.PULL_DOWN);
 
+let actLed = true;
+
 Timer.set(tickMs, Timer.REPEAT, function(ctx) {
     
     let highTariff = GPIO.read(pinTariff) === 1;
     print("HIGH TARIFF", highTariff);
+    regTariff.setLocal(highTariff);
 
     let temp = 19;
     print("TEMP", temp);
+    regTemp.setLocal(temp);
 
     let enabled = regEnabled.value;
     print("ENABLED", enabled);
     
     let channels;
     
-    if (enabled || temp !== undefined) {
+    if (enabled && temp !== undefined) {
 
         let target = regTarget.value;
         print("TARGET", target);
@@ -83,7 +91,6 @@ Timer.set(tickMs, Timer.REPEAT, function(ctx) {
             print("High tariff, decreasing target by", httd);
             target -= httd;
         }
-        print("TARGET", target);
     
         channels = (target - temp) * 3; // 3 channels / degree
         if (channels > 6) {
@@ -93,8 +100,11 @@ Timer.set(tickMs, Timer.REPEAT, function(ctx) {
             channels = 0;
         }
 
+        actLed = !actLed;
+
     } else {
         channels = 0;
+        actLed = true;
     }
 
     print("CHANNELS", channels);
@@ -104,9 +114,10 @@ Timer.set(tickMs, Timer.REPEAT, function(ctx) {
     for (let c = 0; c < 6; c++) {
         pcfWrite |= (channels > c? 0: 1) << (portRelay + c);
     }
-    
 
-    //pcfWrite |= 1 << portLed2;
+    pcfWrite |= (highTariff? 0: 1) << portLed1;
+    pcfWrite |= (actLed? 0: 1) << portLed2;
+
     pcf.write(pcfWrite);
 
 }, null);
