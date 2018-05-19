@@ -1,5 +1,5 @@
 author: DEVICE-FARM
-description: A simple test on ESP8266 with two LEDs connected - Orange on pin 4 and Blue on pin 5
+description: 6 channel electric boiler controller with I2C connected temperature sensor and mains-level tariff sensor
 version: 1.0
 arch: esp8266
 
@@ -24,10 +24,11 @@ config_schema:
   - ["heating", "o", {title: "Electric Heating"}]
   - ["heating.enabled", "b", true, {"title": "Is heating enabled?"}]
   - ["heating.target", "i", 20, {"title": "Target temperature in Celsius"}]
-  - ["heating.relay0", "i", 0, {"title": "First relay PCF port number"}]
-  - ["heating.relay5", "i", 5, {"title": "Last relay PCF port number"}]
-  - ["heating.led1", "i", 6, {"title": "LED1 PCF port number"}]
-  - ["heating.led2", "i", 7, {"title": "LED2 PCF port number"}]
+  - ["heating.httd", "i", 2, {"title": "Target temperature drop in high tariff"}]
+  - ["heating.pcf8574", "i", 56, {"title": "PCF8574 I2C address"}]
+  - ["heating.relay", "i", 0, {"title": "First relay PCF8574 port number"}]
+  - ["heating.led1", "i", 6, {"title": "LED1 PCF8574 port number"}]
+  - ["heating.led2", "i", 7, {"title": "LED2 PCF8574 port number"}]
   - ["heating.tickms", "i", 2000, {"title": "Tick period in ms"}]
   - ["heating.tariff", "i", 5, {"title": "Tariff sensor pin number"}]
 
