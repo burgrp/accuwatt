@@ -41,6 +41,7 @@ let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled"
 let regTemp = Register.add("temp", RegisterLM75A.create(0x48, i2c));
 
 let regTariff = Register.add("tariff", RegisterVariable.create(undefined));
+let regChannels = Register.add("channels", RegisterVariable.create(undefined));
 
 let pcfAddress = Cfg.get("heating.pcf8574");
 print("PCF8574 address", pcfAddress);
@@ -91,7 +92,7 @@ Timer.set(tickMs, Timer.REPEAT, function() {
             target -= httd;
         }
     
-        channels = (target - temp) * 3; // 3 channels / degree
+        channels = Math.round((target - temp) * 3); // 3 channels / degree
         if (channels > 6) {
             channels = 6;
         }
@@ -107,6 +108,7 @@ Timer.set(tickMs, Timer.REPEAT, function() {
     }
 
     print("CHANNELS", channels);
+    regChannels.setLocal(channels);
 
     let pcfWrite = 0;
 
