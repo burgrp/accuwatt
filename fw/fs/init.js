@@ -70,6 +70,7 @@ let actLed = true;
 Timer.set(tickMs, Timer.REPEAT, function() {
     
     let highTariff = GPIO.read(pinTariff) === 0;
+
     print("HIGH TARIFF", highTariff);
     regTariff.setLocal(highTariff);
 
