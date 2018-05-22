@@ -5,13 +5,14 @@ load("api_gpio.js");
 load("api_timer.js");
 load("api_i2c.js");
 
-load("api_df_pcf8574.js");
-
 load("api_df_reg.js");
 load("api_df_reg_gpo.js");
 load("api_df_reg_cfg.js");
 load("api_df_reg_var.js");
+load("api_df_reg_lm75a.js");
+load("api_df_reg_pcf8574.js");
 
+let i2c = I2C.get();
 
 let regTarget = Register.add("target", RegisterConfig.create("heating.target", function(value) {
     return {
@@ -37,10 +38,9 @@ let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled"
     };
 }));
 
-let regTemp = Register.add("temp", RegisterVariable.create(undefined));
-let regTariff = Register.add("tariff", RegisterVariable.create(undefined));
+let regTemp = Register.add("temp", RegisterLM75A.create(0x48, i2c));
 
-let i2c = I2C.get();
+let regTariff = Register.add("tariff", RegisterVariable.create(undefined));
 
 let pcfAddress = Cfg.get("heating.pcf8574");
 print("PCF8574 address", pcfAddress);
@@ -66,15 +66,14 @@ GPIO.set_pull(pinTariff, GPIO.PULL_DOWN);
 
 let actLed = true;
 
-Timer.set(tickMs, Timer.REPEAT, function(ctx) {
+Timer.set(tickMs, Timer.REPEAT, function() {
     
-    let highTariff = GPIO.read(pinTariff) === 1;
+    let highTariff = GPIO.read(pinTariff) === 0;
     print("HIGH TARIFF", highTariff);
     regTariff.setLocal(highTariff);
 
-    let temp = 19;
+    let temp = regTemp.value;
     print("TEMP", temp);
-    regTemp.setLocal(temp);
 
     let enabled = regEnabled.value;
     print("ENABLED", enabled);
@@ -115,8 +114,8 @@ Timer.set(tickMs, Timer.REPEAT, function(ctx) {
         pcfWrite |= (channels > c? 0: 1) << (portRelay + c);
     }
 
-    pcfWrite |= (highTariff? 0: 1) << portLed1;
-    pcfWrite |= (actLed? 0: 1) << portLed2;
+    pcfWrite |= (highTariff? 0: 1) << portLed2;
+    pcfWrite |= (actLed? 0: 1) << portLed1;
 
     pcf.write(pcfWrite);
 
