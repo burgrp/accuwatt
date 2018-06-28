@@ -14,7 +14,7 @@ load("api_df_reg_pcf8574.js");
 
 let i2c = I2C.get();
 
-let regTarget = Register.add("target", RegisterConfig.create("heating.target", function(value) {
+let regTarget = Register.add("target", RegisterConfig.create("heating.target", function (value) {
     return {
         heating: {
             target: value
@@ -22,7 +22,7 @@ let regTarget = Register.add("target", RegisterConfig.create("heating.target", f
     };
 }));
 
-let regHttd = Register.add("httd", RegisterConfig.create("heating.httd", function(value) {
+let regHttd = Register.add("httd", RegisterConfig.create("heating.httd", function (value) {
     return {
         heating: {
             httd: value
@@ -30,7 +30,7 @@ let regHttd = Register.add("httd", RegisterConfig.create("heating.httd", functio
     };
 }));
 
-let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled", function(value) {
+let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled", function (value) {
     return {
         heating: {
             enabled: value
@@ -67,8 +67,8 @@ GPIO.set_pull(pinTariff, GPIO.PULL_DOWN);
 
 let actLed = true;
 
-Timer.set(tickMs, Timer.REPEAT, function() {
-    
+Timer.set(tickMs, Timer.REPEAT, function () {
+
     let highTariff = GPIO.read(pinTariff) === 0;
 
     print("HIGH TARIFF", highTariff);
@@ -79,20 +79,20 @@ Timer.set(tickMs, Timer.REPEAT, function() {
 
     let enabled = regEnabled.value;
     print("ENABLED", enabled);
-    
-    let channels;
-    
-    if (enabled && temp !== undefined) {
 
-        let target = regTarget.value;
-        print("TARGET", target);
-    
+    let channels;
+
+    let target = regTarget.value;
+    print("TARGET", target);
+
+    if (enabled && temp !== undefined && target < 70) {
+
         if (highTariff) {
             let httd = regHttd.value;
             print("High tariff, decreasing target by", httd);
             target -= httd;
         }
-    
+
         channels = Math.round((target - temp) * 3); // 3 channels / degree
         if (channels > 6) {
             channels = 6;
@@ -114,11 +114,11 @@ Timer.set(tickMs, Timer.REPEAT, function() {
     let pcfWrite = 0;
 
     for (let c = 0; c < 6; c++) {
-        pcfWrite |= (channels > c? 0: 1) << (portRelay + c);
+        pcfWrite |= (channels > c ? 0 : 1) << (portRelay + c);
     }
 
-    pcfWrite |= (highTariff? 0: 1) << portLed2;
-    pcfWrite |= (actLed? 0: 1) << portLed1;
+    pcfWrite |= (highTariff ? 0 : 1) << portLed2;
+    pcfWrite |= (actLed ? 0 : 1) << portLed1;
 
     pcf.write(pcfWrite);
 
