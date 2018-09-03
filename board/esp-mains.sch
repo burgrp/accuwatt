@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:DO6TS1A-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -517,7 +518,7 @@ Connection ~ 6550 5100
 Wire Wire Line
 	6550 5450 6950 5450
 $Comp
-L ESP-PROG X1
+L ESP-PROG-RESCUE-DO6TS1A X1
 U 1 1 5A97E79C
 P 7000 2850
 AR Path="/5A97E79C" Ref="X1"  Part="1" 
