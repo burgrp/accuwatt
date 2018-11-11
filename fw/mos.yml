@@ -11,6 +11,7 @@ sources:
 
 filesystem:
   - fs
+  - fs-build
 
 libs:
   - origin: ../../mg-df-core
@@ -22,6 +23,7 @@ config_schema:
   - ["i2c.enable", true]
   - ["i2c.debug", true]
   - ["heating", "o", {title: "Electric Heating"}]
+  - ["heating.prefix", "s", "heating.", {"title": "Register name prefix"}]
   - ["heating.enabled", "b", true, {"title": "Is heating enabled?"}]
   - ["heating.target", "i", 20, {"title": "Target temperature in Celsius"}]
   - ["heating.httd", "i", 2, {"title": "Target temperature drop in high tariff"}]
@@ -32,4 +34,4 @@ config_schema:
   - ["heating.tickms", "i", 2000, {"title": "Tick period in ms"}]
   - ["heating.tariff", "i", 5, {"title": "Tariff sensor pin number"}]
 
-skeleton_version: 2017-05-18
+manifest_version: 2017-09-29

@@ -14,7 +14,9 @@ load("api_df_reg_pcf8574.js");
 
 let i2c = I2C.get();
 
-let regTarget = Register.add("target", RegisterConfig.create("heating.target", function (value) {
+let regPrefix = Cfg.get("heating.prefix");
+
+let regTarget = Register.add(regPrefix + "target", RegisterConfig.create("heating.target", function (value) {
     return {
         heating: {
             target: value
@@ -22,7 +24,7 @@ let regTarget = Register.add("target", RegisterConfig.create("heating.target", f
     };
 }));
 
-let regHttd = Register.add("httd", RegisterConfig.create("heating.httd", function (value) {
+let regHttd = Register.add(regPrefix + "httd", RegisterConfig.create("heating.httd", function (value) {
     return {
         heating: {
             httd: value
@@ -30,7 +32,7 @@ let regHttd = Register.add("httd", RegisterConfig.create("heating.httd", functio
     };
 }));
 
-let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled", function (value) {
+let regEnabled = Register.add(regPrefix + "enabled", RegisterConfig.create("heating.enabled", function (value) {
     return {
         heating: {
             enabled: value
@@ -38,10 +40,10 @@ let regEnabled = Register.add("enabled", RegisterConfig.create("heating.enabled"
     };
 }));
 
-let regTemp = Register.add("temp", RegisterLM75A.create(0x48, i2c));
+let regTemp = Register.add(regPrefix + "temp", RegisterLM75A.create(0x48, i2c));
 
-let regTariff = Register.add("tariff", RegisterVariable.create(undefined));
-let regChannels = Register.add("channels", RegisterVariable.create(undefined));
+let regTariff = Register.add(regPrefix + "tariff", RegisterVariable.create(undefined));
+let regChannels = Register.add(regPrefix + "channels", RegisterVariable.create(undefined));
 
 let pcfAddress = Cfg.get("heating.pcf8574");
 print("PCF8574 address", pcfAddress);
