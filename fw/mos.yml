@@ -17,6 +17,7 @@ config_schema:
   - ["heating", "o", {title: "Electric Heating"}]
   - ["heating.prefix", "s", "heating.", {"title": "Register name prefix"}]
   - ["heating.enabled", "b", true, {"title": "Is heating enabled?"}]
+  - ["heating.channels", "i", 6, {"title": "Number of available channels"}]
   - ["heating.target", "i", 20, {"title": "Target temperature in Celsius"}]
   - ["heating.httd", "i", 2, {"title": "Target temperature drop in high tariff"}]
   - ["heating.pcf8574", "i", 56, {"title": "PCF8574 I2C address"}]

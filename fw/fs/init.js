@@ -40,6 +40,17 @@ let regEnabled = Register.add(regPrefix + "enabled", RegisterConfig.create("heat
     };
 }));
 
+let regMaxChannels = Register.add(regPrefix + "maxchannels", RegisterConfig.create("heating.channels", function (value) {
+    if (value > 6) value = 6;
+    if (value < 0) value = 0;
+    return {       
+        heating: {
+            channels: value
+        }
+    };
+}));
+
+
 let regTemp = Register.add(regPrefix + "temp", RegisterLM75A.create(0x48, i2c));
 
 let regTariff = Register.add(regPrefix + "tariff", RegisterVariable.create(undefined));
@@ -87,7 +98,7 @@ Timer.set(tickMs, Timer.REPEAT, function () {
     let target = regTarget.value;
     print("TARGET", target);
 
-    if (enabled && temp !== undefined && target < 70) {
+    if (enabled && temp !== undefined && target <= 90) {
 
         if (highTariff) {
             let httd = regHttd.value;
@@ -96,8 +107,8 @@ Timer.set(tickMs, Timer.REPEAT, function () {
         }
 
         channels = Math.round((target - temp) * 3); // 3 channels / degree
-        if (channels > 6) {
-            channels = 6;
+        if (channels > regMaxChannels.value) {
+            channels = regMaxChannels.value;
         }
         if (channels < 0) {
             channels = 0;
