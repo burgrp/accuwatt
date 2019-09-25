@@ -1,6 +1,6 @@
 /* global RegisterGPO, Register, RegisterDS18B20 */
 
-load('api_config.js');
+load("api_config.js");
 load("api_gpio.js");
 load("api_timer.js");
 load("api_i2c.js");
@@ -11,6 +11,7 @@ load("api_df_reg_cfg.js");
 load("api_df_reg_var.js");
 load("api_df_reg_lm75a.js");
 load("api_df_reg_pcf8574.js");
+load("api_df_reboot.js");
 
 let i2c = I2C.get();
 
@@ -43,7 +44,7 @@ let regEnabled = Register.add(regPrefix + "enabled", RegisterConfig.create("heat
 let regMaxChannels = Register.add(regPrefix + "maxchannels", RegisterConfig.create("heating.channels", function (value) {
     if (value > 6) value = 6;
     if (value < 0) value = 0;
-    return {       
+    return {
         heating: {
             channels: value
         }
@@ -80,6 +81,8 @@ GPIO.set_pull(pinTariff, GPIO.PULL_DOWN);
 
 let actLed = true;
 
+Reboot.after(10);
+
 Timer.set(tickMs, Timer.REPEAT, function () {
 
     let highTariff = GPIO.read(pinTariff) === 0;
@@ -96,9 +99,19 @@ Timer.set(tickMs, Timer.REPEAT, function () {
     let channels;
 
     let target = regTarget.value;
+    if (target > 90) {
+        target = 90;
+    }
     print("TARGET", target);
 
-    if (enabled && temp !== undefined && target <= 90) {
+    // LM75A sensor sometimes reads as 0, probably due to bad I2C timing.
+    // We check for a minimum temperature to identify this error condition.
+    if (temp < 2) {
+        print("TEMP too low! Is I2C broken?");
+        temp = undefined;
+    }
+
+    if (enabled && temp !== undefined) {
 
         if (highTariff) {
             let httd = regHttd.value;
