@@ -5,6 +5,9 @@
 build
 nbproject
 node_modules
+Gerber
+gerber
+_autosave-*
 
 fw/deps
 fw/build
