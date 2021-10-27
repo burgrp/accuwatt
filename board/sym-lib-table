@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name DO6TS1A-rescue)(type Legacy)(uri ${KIPRJMOD}/DO6TS1A-rescue.lib)(options "")(descr ""))
 )
