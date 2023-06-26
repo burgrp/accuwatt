@@ -168,6 +168,6 @@ while True:
         print("Temperature:", temp_act)
         print("PWM:", list(map(lambda r: r.get_value(), regs_channels_int)))
 
-    wdt.feed()
     gc.collect()
     time.sleep_ms(site_config.loop_period_ms)
+    wdt.feed()
