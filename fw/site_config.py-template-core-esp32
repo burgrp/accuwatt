@@ -1,0 +1,19 @@
+wifi_ssid = '???'
+wifi_password='???'
+mqtt_broker='10.1.0.12'
+name='accu-test'
+debug=True
+wifi_led_pin=12
+
+loop_period_ms=100
+watchdog_ms=10000
+ext_channel_timeout_ms=10000
+
+temp_address=79
+temp_sda=4
+temp_scl=5
+
+regulation_proportional=0.5
+
+pwm_frequency=50000
+channels = (13,2,3)
