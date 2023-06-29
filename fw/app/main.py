@@ -6,12 +6,13 @@ import gc
 import sys
 sys.path.append('/')
 import site_config
+import board_config
 
 print('DO6TS1A')
 
-i2c = I2C(0, scl=Pin(site_config.temp_scl), sda=Pin(site_config.temp_sda), freq=100000)
-pwms = list(map(lambda ch: PWM(Pin(ch), freq=site_config.pwm_frequency, duty=0), site_config.channels))
-wifi_led = Pin(site_config.wifi_led_pin, Pin.OUT)
+i2c = I2C(0, scl=Pin(board_config.temp_scl), sda=Pin(board_config.temp_sda), freq=100000)
+pwms = list(map(lambda ch: PWM(Pin(ch), freq=board_config.pwm_frequency, duty=0), board_config.channels))
+wifi_led = Pin(board_config.wifi_led_pin, Pin.OUT)
 
 reg_prefix = site_config.name + '.'
 reg_device = site_config.name
@@ -37,7 +38,7 @@ class ExtChannelRegister(mqtt_reg.ServerRegister):
             value = 0
 
         self.value = value
-        self.timeOut = time.ticks_ms() + site_config.ext_channel_timeout_ms
+        self.timeOut = time.ticks_ms() + board_config.ext_channel_timeout_ms
 
 class IntChannelRegister(mqtt_reg.ServerReadOnlyRegister):
     def __init__(self, index):
@@ -93,15 +94,15 @@ reg_temp_act = mqtt_reg.ServerReadOnlyRegister(
     value = None
 )
 
-regs_channels_ext = list(map(lambda e: ExtChannelRegister(e[0]), enumerate(site_config.channels)))
-regs_channels_int = list(map(lambda e: IntChannelRegister(e[0]), enumerate(site_config.channels)))
+regs_channels_ext = list(map(lambda e: ExtChannelRegister(e[0]), enumerate(board_config.channels)))
+regs_channels_int = list(map(lambda e: IntChannelRegister(e[0]), enumerate(board_config.channels)))
 
 registry = mqtt_reg.Registry(
     wifi_ssid=site_config.wifi_ssid,
     wifi_password=site_config.wifi_password,
     mqtt_broker=site_config.mqtt_broker,
     online_cb= lambda online: wifi_led.value(1 if online else 0),
-    debug=site_config.debug,
+    debug=board_config.debug,
     server=[
         reg_enabled,
         reg_temp_min,
@@ -114,7 +115,7 @@ registry = mqtt_reg.Registry(
 
 registry.start(background=True)
 
-wdt = WDT(timeout=site_config.watchdog_ms)
+wdt = WDT(timeout=board_config.watchdog_ms)
 
 while True:
 
@@ -131,7 +132,7 @@ while True:
 
     # read temperature
     try:
-        temp = i2c.readfrom(site_config.temp_address, 2)
+        temp = i2c.readfrom(board_config.temp_address, 2)
         temp = round(int.from_bytes(temp, 'big', True) / 256, 1)
         reg_temp_act.set_value_local(temp)
     except Exception as e:
@@ -150,10 +151,10 @@ while True:
 
         duty = 0
         if enabled and temp_act is not None and temp_min is not None:
-            duty = min(max((temp_min - temp_act) * site_config.regulation_proportional, 0), 1)
+            duty = min(max((temp_min - temp_act) * board_config.regulation_proportional, 0), 1)
 
             if temp_max is not None:
-                max_duty = min(max((temp_max - temp_act) * site_config.regulation_proportional, 0), 1)
+                max_duty = min(max((temp_max - temp_act) * board_config.regulation_proportional, 0), 1)
                 duty = min(max(duty, reg_ext.get_value()), max_duty)
 
         pwm.duty(int(duty * 1023))
@@ -164,10 +165,10 @@ while True:
             print("Error setting internal channel:", e)
 
 
-    if site_config.debug:
+    if board_config.debug:
         print("Temperature:", temp_act)
         print("PWM:", list(map(lambda r: r.get_value(), regs_channels_int)))
 
     gc.collect()
-    time.sleep_ms(site_config.loop_period_ms)
+    time.sleep_ms(board_config.loop_period_ms)
     wdt.feed()

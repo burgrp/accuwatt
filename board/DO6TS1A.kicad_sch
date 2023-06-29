@@ -2041,6 +2041,12 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid a0828b3e-bfe7-4ac5-8795-e5fd57f7f7e9)
   )
+  (text "Next ver:\nI2C pullup 1k5\nreplaceMicromatch by IDC\nreplace LM1117 by SMPS" (exclude_from_sim no)
+
+    (at 110.49 29.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid cd152092-4033-4f60-836f-32a6aacfe507)
+  )
 
   (label "AOUT2" (at 209.55 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
