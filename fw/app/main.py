@@ -132,9 +132,16 @@ while True:
 
     # read temperature
     try:
-        temp = i2c.readfrom(board_config.temp_address, 2)
-        temp = round(int.from_bytes(temp, 'big', True) / 256, 1)
-        reg_temp_act.set_value_local(temp)
+        avgSum = 0
+        avgCnt = 0
+        for i in range(0, 5):
+            temp = i2c.readfrom(board_config.temp_address, 2)
+            temp = round(int.from_bytes(temp, 'big', True) / 256, 1)
+            avgSum += temp
+            avgCnt += 1
+
+        reg_temp_act.set_value_local(round(avgSum / avgCnt, 1))
+
     except Exception as e:
         print("Error reading temperature:", e)
         reg_temp_act.set_value_local(None)
@@ -157,6 +164,8 @@ while True:
                 max_duty = min(max((temp_max - temp_act) * board_config.regulation_proportional, 0), 1)
                 duty = min(max(duty, reg_ext.get_value()), max_duty)
 
+        duty = round(duty, 2)
+
         pwm.duty(int(duty * 1023))
 
         try:
@@ -165,10 +174,12 @@ while True:
             print("Error setting internal channel:", e)
 
 
+    #gc.collect()
+
     if board_config.debug:
         print("Temperature:", temp_act)
         print("PWM:", list(map(lambda r: r.get_value(), regs_channels_int)))
+        print("Free RAM:", gc.mem_free())
 
-    gc.collect()
     time.sleep_ms(board_config.loop_period_ms)
     wdt.feed()

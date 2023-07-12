@@ -1,4 +1,4 @@
 wifi_ssid = '???'
 wifi_password='???'
-mqtt_broker='10.1.0.152'
+mqtt_broker='10.1.0.80'
 name='accu-test'

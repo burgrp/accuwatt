@@ -1,7 +1,7 @@
 debug=True
-wifi_led_pin=5
+wifi_led_pin=6
 
-loop_period_ms=500
+loop_period_ms=1000
 watchdog_ms=10000
 ext_channel_timeout_ms=10000
 
