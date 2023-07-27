@@ -10,7 +10,7 @@ import board_config
 
 print('DO6TS1A')
 
-i2c = I2C(0, scl=Pin(board_config.temp_scl), sda=Pin(board_config.temp_sda), freq=100000)
+i2c = I2C(0, scl=Pin(board_config.temp_scl), sda=Pin(board_config.temp_sda), freq=10000)
 pwms = list(map(lambda ch: PWM(Pin(ch), freq=board_config.pwm_frequency, duty=0), board_config.channels))
 wifi_led = Pin(board_config.wifi_led_pin, Pin.OUT)
 
