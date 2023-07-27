@@ -136,7 +136,10 @@ while True:
         avgCnt = 0
         for i in range(0, 5):
             temp = i2c.readfrom(board_config.temp_address, 2)
-            temp = round(int.from_bytes(temp, 'big', True) / 256, 1)
+            temp = (temp[0] << 3) | (temp[1] >> 5)
+            mask = 0x400
+            temp = (-(temp & mask) + (temp & ~mask)) * 0.125
+
             avgSum += temp
             avgCnt += 1
 
