@@ -56,15 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|160178001|93198003|58153be5-d955-44a2-b464-ecf39c875396|6465fdb1-aa1f-404a-a464-7b8e83a21c98",
-        "lib_footprint_mismatch|171060000|75521251|a33cf711-1942-49b2-8023-7c8af3946c71|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|174110000|84521251|125894a6-1c92-472d-8bc2-818106e82236|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|174110000|90521251|623fbe3b-ea6a-4a4f-afd5-6a28df613aa2|00000000-0000-0000-0000-000000000000",
-        "starved_thermal|137000000|47050000|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|ce0b8dd7-c0c5-48bc-b8e4-a9424a01bd9f|F.Cu",
-        "starved_thermal|166380000|53985001|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|8384eb38-b31b-4762-9f72-d87ab7aaf680|F.Cu",
-        "unresolved_variable|165500000|77000000|c69ef280-58d0-45f2-abbc-dd6e36162c13|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -436,7 +428,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "DO6TS1A.kicad_pro",
+    "filename": "ssreg6.kicad_pro",
     "version": 1
   },
   "net_settings": {

@@ -703,52 +703,6 @@
         )
       )
     )
-    (symbol "Drake:PSU" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 0 8.89 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "PSU" (at 0 -8.89 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (symbol "PSU_0_1"
-        (rectangle (start -7.62 6.35) (end 7.62 -6.35)
-          (stroke (width 0) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -6.35)
-            (xy 1.27 6.35)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "PSU_1_1"
-        (pin input line (at -12.7 3.81 0) (length 5.08)
-          (name "LINE1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -12.7 -3.81 0) (length 5.08)
-          (name "LINE2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 12.7 -3.81 180) (length 5.08)
-          (name "OUT-" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 12.7 3.81 180) (length 5.08)
-          (name "OUT+" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Espressif:ESP32-C3-WROOM-02" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 33.02 0)
         (effects (font (size 1.27 1.27)))
@@ -1057,35 +1011,6 @@
         )
       )
     )
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
     (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1296,6 +1221,9 @@
   (junction (at 167.64 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 09d3d627-326d-41d3-9852-481a4e0635d4)
   )
+  (junction (at 140.97 49.53) (diameter 0) (color 0 0 0 0)
+    (uuid 1084c6b7-a505-406a-baeb-ff5f2d57deb0)
+  )
   (junction (at 167.64 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 1574c3fc-6f67-415f-9bb8-f5c1e9ba1376)
   )
@@ -1304,6 +1232,9 @@
   )
   (junction (at 48.26 163.83) (diameter 0) (color 0 0 0 0)
     (uuid 2795786e-115c-4686-b305-eb6d44822f83)
+  )
+  (junction (at 153.67 82.55) (diameter 0) (color 0 0 0 0)
+    (uuid 27c91691-1ae3-4c96-9930-8412b0fa91e9)
   )
   (junction (at 167.64 104.14) (diameter 0) (color 0 0 0 0)
     (uuid 2ab3eb02-a8c9-4946-8ab5-e949045af3c6)
@@ -1335,11 +1266,20 @@
   (junction (at 142.24 184.15) (diameter 0) (color 0 0 0 0)
     (uuid 47f77cbc-36cf-43ff-bd53-e831a13f7dea)
   )
+  (junction (at 153.67 60.96) (diameter 0) (color 0 0 0 0)
+    (uuid 495916e2-0f77-4f75-a1f0-7bbf222f8a20)
+  )
   (junction (at 153.67 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 4c426934-cf65-4d20-9320-b0fe4b285dae)
   )
+  (junction (at 140.97 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 4fe775b1-ac67-47db-9159-590ac62e73fd)
+  )
   (junction (at 266.7 76.2) (diameter 0) (color 0 0 0 0)
     (uuid 50413029-c8ae-4229-b2fa-588d438986f3)
+  )
+  (junction (at 140.97 92.71) (diameter 0) (color 0 0 0 0)
+    (uuid 50b00220-f23d-4212-b2ca-3d56f74fd775)
   )
   (junction (at 167.64 125.73) (diameter 0) (color 0 0 0 0)
     (uuid 52b2454e-c544-40af-9d3d-f241a279390c)
@@ -1383,6 +1323,9 @@
   (junction (at 48.26 184.15) (diameter 0) (color 0 0 0 0)
     (uuid 8ef80447-0c2e-4a45-828e-f638f4832f09)
   )
+  (junction (at 153.67 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 9a2bfde8-9d08-4d2f-83fc-50d77df7f2f1)
+  )
   (junction (at 96.52 91.44) (diameter 0) (color 0 0 0 0)
     (uuid 9bc8fce9-6388-462b-babc-4f9a8e947ee5)
   )
@@ -1394,6 +1337,9 @@
   )
   (junction (at 266.7 78.74) (diameter 0) (color 0 0 0 0)
     (uuid a2aac812-5fba-4e8c-9e57-8fb00d4eec34)
+  )
+  (junction (at 153.67 147.32) (diameter 0) (color 0 0 0 0)
+    (uuid a39ae627-c4f0-4850-99cc-7c885f80bf04)
   )
   (junction (at 238.76 40.64) (diameter 0) (color 0 0 0 0)
     (uuid a8913d5d-bb1d-491e-a5fb-8cbb8f17c90a)
@@ -1440,14 +1386,29 @@
   (junction (at 193.04 73.66) (diameter 0) (color 0 0 0 0)
     (uuid ca7ddd8d-7f07-46fd-9467-aef4d5902103)
   )
+  (junction (at 153.67 104.14) (diameter 0) (color 0 0 0 0)
+    (uuid cf465c42-b9a8-4a1f-b5b4-ae7d6258b16b)
+  )
+  (junction (at 140.97 71.12) (diameter 0) (color 0 0 0 0)
+    (uuid cffd6b93-b5aa-4f17-a91f-6e17e8ace0aa)
+  )
+  (junction (at 153.67 125.73) (diameter 0) (color 0 0 0 0)
+    (uuid d68ecf74-80f8-4a49-9c79-dc43999809f1)
+  )
   (junction (at 142.24 168.91) (diameter 0) (color 0 0 0 0)
     (uuid d6cbc53c-a7f6-48cf-aa70-b3cb78d0e5cb)
   )
   (junction (at 177.8 82.55) (diameter 0) (color 0 0 0 0)
     (uuid d965f442-afc6-4576-a702-209da3802ce3)
   )
+  (junction (at 140.97 114.3) (diameter 0) (color 0 0 0 0)
+    (uuid dc59ff21-8f81-4b63-82e3-cd51aea18c3f)
+  )
   (junction (at 153.67 27.94) (diameter 0) (color 0 0 0 0)
     (uuid dfc0a3d3-382d-4fc2-9a76-c450698db424)
+  )
+  (junction (at 140.97 27.94) (diameter 0) (color 0 0 0 0)
+    (uuid e19cc994-098d-4cf5-b0c9-fbaddb6386ba)
   )
   (junction (at 153.67 114.3) (diameter 0) (color 0 0 0 0)
     (uuid e66515f8-38a1-4335-a0fa-6ce667a7887e)
@@ -1468,9 +1429,12 @@
   (no_connect (at 96.52 48.26) (uuid 172863cb-19e1-4ead-a968-4767b3c8f4ed))
   (no_connect (at 256.54 31.75) (uuid 65d44178-889c-4d30-b38c-1531027a4ebc))
   (no_connect (at 41.91 76.2) (uuid 7a5fa1bc-f8f0-4230-9cf2-3adac951459d))
-  (no_connect (at 96.52 50.8) (uuid be88f33a-219f-4c8a-840c-e4502c34bc17))
   (no_connect (at 256.54 29.21) (uuid ceb7fa84-01c6-4ec0-96b7-adcb1f31c749))
 
+  (wire (pts (xy 140.97 82.55) (xy 153.67 82.55))
+    (stroke (width 0) (type default))
+    (uuid 00220b5d-abbd-4bec-915c-e92b3c9994cc)
+  )
   (wire (pts (xy 40.64 176.53) (xy 40.64 184.15))
     (stroke (width 0) (type default))
     (uuid 01d0241d-c132-49da-b2b4-e3df99b81b42)
@@ -1531,6 +1495,10 @@
     (stroke (width 0) (type default))
     (uuid 0f70dd62-e0d5-4ca2-9181-b186145f65bc)
   )
+  (wire (pts (xy 140.97 92.71) (xy 140.97 93.98))
+    (stroke (width 0) (type default))
+    (uuid 11a522df-cedb-496d-a043-e8149a3fa2fc)
+  )
   (wire (pts (xy 87.63 182.88) (xy 87.63 184.15))
     (stroke (width 0) (type default))
     (uuid 11dfcb81-3e43-4e16-b3f7-1c443ee61ae1)
@@ -1571,6 +1539,10 @@
     (stroke (width 0) (type default))
     (uuid 1f7a1126-9d82-4eac-a890-ab13958c9e12)
   )
+  (wire (pts (xy 140.97 147.32) (xy 153.67 147.32))
+    (stroke (width 0) (type default))
+    (uuid 1f8043e7-e141-4b75-afad-b6a2a49ef4ec)
+  )
   (wire (pts (xy 157.48 184.15) (xy 163.83 184.15))
     (stroke (width 0) (type default))
     (uuid 1ffecebe-67c8-4f02-86af-e60fc9ec9d0d)
@@ -1578,6 +1550,10 @@
   (wire (pts (xy 31.75 129.54) (xy 34.29 129.54))
     (stroke (width 0) (type default))
     (uuid 20a7deee-ad5f-4397-bfdf-342ffe8c206a)
+  )
+  (wire (pts (xy 140.97 135.89) (xy 142.24 135.89))
+    (stroke (width 0) (type default))
+    (uuid 2115d378-e210-4632-b117-413982e7b710)
   )
   (wire (pts (xy 168.91 104.14) (xy 167.64 104.14))
     (stroke (width 0) (type default))
@@ -1615,7 +1591,11 @@
     (stroke (width 0) (type default))
     (uuid 2b4aa9c5-b89f-49cb-bf37-32989b9e4268)
   )
-  (wire (pts (xy 140.97 49.53) (xy 142.24 49.53))
+  (wire (pts (xy 140.97 49.53) (xy 140.97 50.8))
+    (stroke (width 0) (type default))
+    (uuid 2b7c0712-c307-4914-8ec6-eae0b70867c4)
+  )
+  (wire (pts (xy 139.7 49.53) (xy 140.97 49.53))
     (stroke (width 0) (type default))
     (uuid 2cb45ede-a408-429c-b297-b3ca6f6338c2)
   )
@@ -1639,7 +1619,11 @@
     (stroke (width 0) (type default))
     (uuid 2f967874-7c87-40db-b58a-b6d67feb901a)
   )
-  (wire (pts (xy 140.97 114.3) (xy 142.24 114.3))
+  (wire (pts (xy 140.97 101.6) (xy 140.97 104.14))
+    (stroke (width 0) (type default))
+    (uuid 2f9f16aa-78b3-4dc9-a8bb-b1f1cb49cefc)
+  )
+  (wire (pts (xy 139.7 114.3) (xy 140.97 114.3))
     (stroke (width 0) (type default))
     (uuid 2fc68a67-5859-4388-b57a-debc80b840a2)
   )
@@ -1683,6 +1667,10 @@
     (stroke (width 0) (type default))
     (uuid 45083d95-4500-4418-86d8-91aa26c805fa)
   )
+  (wire (pts (xy 140.97 104.14) (xy 153.67 104.14))
+    (stroke (width 0) (type default))
+    (uuid 457c16b5-1969-4bbc-ad5e-d92a9fa8de9f)
+  )
   (wire (pts (xy 177.8 60.96) (xy 182.88 60.96))
     (stroke (width 0) (type default))
     (uuid 45d0aa5e-1b48-4ef3-8258-3f0f28a7ae5e)
@@ -1690,6 +1678,10 @@
   (wire (pts (xy 153.67 27.94) (xy 153.67 29.21))
     (stroke (width 0) (type default))
     (uuid 4684e2c3-cae1-4234-ba97-f7b2df3b8e3f)
+  )
+  (wire (pts (xy 74.93 130.81) (xy 69.85 130.81))
+    (stroke (width 0) (type default))
+    (uuid 4765974f-54c1-48e4-aea3-46645bbc9921)
   )
   (wire (pts (xy 153.67 80.01) (xy 153.67 82.55))
     (stroke (width 0) (type default))
@@ -1723,6 +1715,10 @@
     (stroke (width 0) (type default))
     (uuid 5146edd8-e4d2-4768-a1af-6cbe1d8694c5)
   )
+  (wire (pts (xy 140.97 49.53) (xy 142.24 49.53))
+    (stroke (width 0) (type default))
+    (uuid 523a2f60-d935-425e-ac3b-4266d456e054)
+  )
   (wire (pts (xy 59.69 154.94) (xy 63.5 154.94))
     (stroke (width 0) (type default))
     (uuid 53db09de-be89-4058-919c-f5a87ee56a6c)
@@ -1742,6 +1738,10 @@
   (wire (pts (xy 64.77 181.61) (xy 64.77 184.15))
     (stroke (width 0) (type default))
     (uuid 59491330-6624-4c1d-9e8d-aef3847b15e2)
+  )
+  (wire (pts (xy 140.97 27.94) (xy 140.97 29.21))
+    (stroke (width 0) (type default))
+    (uuid 597fb4b0-5a04-4d3b-bd1d-8cc159f0dc90)
   )
   (wire (pts (xy 96.52 168.91) (xy 96.52 163.83))
     (stroke (width 0) (type default))
@@ -1790,6 +1790,10 @@
   (wire (pts (xy 96.52 176.53) (xy 96.52 184.15))
     (stroke (width 0) (type default))
     (uuid 713b66be-63fb-4816-a07c-3ed019c8dc98)
+  )
+  (wire (pts (xy 140.97 39.37) (xy 153.67 39.37))
+    (stroke (width 0) (type default))
+    (uuid 713cc50e-fa97-4fbd-bf79-e17c0aa69994)
   )
   (wire (pts (xy 127 168.91) (xy 138.43 168.91))
     (stroke (width 0) (type default))
@@ -1843,10 +1847,6 @@
     (stroke (width 0) (type default))
     (uuid 7ad85de8-5d95-4eba-a3d7-d8dbe67a1cfa)
   )
-  (wire (pts (xy 34.29 127) (xy 34.29 124.46))
-    (stroke (width 0) (type default))
-    (uuid 7bed8c33-b516-465e-b961-0174b10ab2f1)
-  )
   (wire (pts (xy 153.67 27.94) (xy 157.48 27.94))
     (stroke (width 0) (type default))
     (uuid 7cb1d9c1-000d-4eae-8672-428e1200a706)
@@ -1871,13 +1871,17 @@
     (stroke (width 0) (type default))
     (uuid 837020e6-c61d-4a32-af47-e6562bd7afc8)
   )
-  (wire (pts (xy 34.29 129.54) (xy 34.29 132.08))
+  (wire (pts (xy 140.97 80.01) (xy 140.97 82.55))
     (stroke (width 0) (type default))
-    (uuid 8379f779-c0aa-4735-8a54-f9362dfe6631)
+    (uuid 855c6b11-e201-493d-9ab0-bf81ee9914de)
   )
   (wire (pts (xy 167.64 92.71) (xy 177.8 92.71))
     (stroke (width 0) (type default))
     (uuid 8710c7f7-2ae7-460b-b969-6e995580c587)
+  )
+  (wire (pts (xy 140.97 123.19) (xy 140.97 125.73))
+    (stroke (width 0) (type default))
+    (uuid 888e073e-5c2a-4f21-94fa-bd587dcf2734)
   )
   (wire (pts (xy 138.43 184.15) (xy 142.24 184.15))
     (stroke (width 0) (type default))
@@ -1903,7 +1907,7 @@
     (stroke (width 0) (type default))
     (uuid 8ffe8a67-aca3-46a2-97f1-6efe7e2d5e44)
   )
-  (wire (pts (xy 140.97 71.12) (xy 142.24 71.12))
+  (wire (pts (xy 139.7 71.12) (xy 140.97 71.12))
     (stroke (width 0) (type default))
     (uuid 9323593e-2f25-4f60-94a4-55ac6733f27d)
   )
@@ -1931,6 +1935,10 @@
     (stroke (width 0) (type default))
     (uuid 9b12dfd5-bb08-4323-ac97-98870c868a30)
   )
+  (wire (pts (xy 140.97 36.83) (xy 140.97 39.37))
+    (stroke (width 0) (type default))
+    (uuid 9be2b26e-128d-4142-8d52-d713051d5d54)
+  )
   (wire (pts (xy 74.93 163.83) (xy 78.74 163.83))
     (stroke (width 0) (type default))
     (uuid 9f3049ed-c296-42bb-aefe-32b19e7a40b1)
@@ -1955,6 +1963,10 @@
     (stroke (width 0) (type default))
     (uuid a3b2bbd5-18ef-4967-8bb7-159b51ea16e3)
   )
+  (wire (pts (xy 140.97 114.3) (xy 140.97 115.57))
+    (stroke (width 0) (type default))
+    (uuid a557a344-d65a-4d9f-bf41-94a5801e9915)
+  )
   (wire (pts (xy 241.3 99.06) (xy 245.11 99.06))
     (stroke (width 0) (type default))
     (uuid a804e610-c635-4c9e-89dd-999b23f6ce37)
@@ -1967,7 +1979,7 @@
     (stroke (width 0) (type default))
     (uuid a871fe32-d1e8-4c1e-83f7-3cead0e4e86f)
   )
-  (wire (pts (xy 140.97 92.71) (xy 142.24 92.71))
+  (wire (pts (xy 139.7 92.71) (xy 140.97 92.71))
     (stroke (width 0) (type default))
     (uuid a97d968f-8ae1-4754-a3a9-ea6846a88951)
   )
@@ -2003,7 +2015,7 @@
     (stroke (width 0) (type default))
     (uuid b7d3ba2e-dc09-4575-a24c-3ff3d15ac28a)
   )
-  (wire (pts (xy 140.97 135.89) (xy 142.24 135.89))
+  (wire (pts (xy 139.7 135.89) (xy 140.97 135.89))
     (stroke (width 0) (type default))
     (uuid b82de019-440b-4d3b-8bb3-ba13f8c5ca22)
   )
@@ -2011,9 +2023,21 @@
     (stroke (width 0) (type default))
     (uuid b9fd0215-b0e3-4dd0-a257-8b147ae2cf57)
   )
+  (wire (pts (xy 140.97 60.96) (xy 153.67 60.96))
+    (stroke (width 0) (type default))
+    (uuid ba6fd4fe-a73d-49a4-b669-7b91f1f5bfea)
+  )
   (wire (pts (xy 78.74 154.94) (xy 77.47 154.94))
     (stroke (width 0) (type default))
     (uuid bb51302a-5d9b-46a9-a3af-a8caa5d595c9)
+  )
+  (wire (pts (xy 140.97 27.94) (xy 142.24 27.94))
+    (stroke (width 0) (type default))
+    (uuid bbc14762-7582-41aa-8111-6223ed7658bf)
+  )
+  (wire (pts (xy 140.97 58.42) (xy 140.97 60.96))
+    (stroke (width 0) (type default))
+    (uuid bc5267ea-5c56-4537-ade4-0aa680f0c4d2)
   )
   (wire (pts (xy 153.67 135.89) (xy 157.48 135.89))
     (stroke (width 0) (type default))
@@ -2047,7 +2071,7 @@
     (stroke (width 0) (type default))
     (uuid c86e4635-cd6a-4570-87a9-b5866f361439)
   )
-  (wire (pts (xy 140.97 27.94) (xy 142.24 27.94))
+  (wire (pts (xy 139.7 27.94) (xy 140.97 27.94))
     (stroke (width 0) (type default))
     (uuid c97384cd-239c-41df-b41b-dd254c6f7771)
   )
@@ -2067,9 +2091,17 @@
     (stroke (width 0) (type default))
     (uuid ce33e1db-c361-444e-b277-21ed9d025561)
   )
+  (wire (pts (xy 140.97 135.89) (xy 140.97 137.16))
+    (stroke (width 0) (type default))
+    (uuid ceba934c-3279-4ef8-bdfe-42c1248926b3)
+  )
   (wire (pts (xy 246.38 76.2) (xy 254 76.2))
     (stroke (width 0) (type default))
     (uuid cedd5d22-cf61-4f4f-8c4c-f54464cdbca8)
+  )
+  (wire (pts (xy 140.97 92.71) (xy 142.24 92.71))
+    (stroke (width 0) (type default))
+    (uuid cfe74616-0980-4023-aeb7-7b0521f39953)
   )
   (wire (pts (xy 266.7 68.58) (xy 266.7 71.12))
     (stroke (width 0) (type default))
@@ -2079,9 +2111,17 @@
     (stroke (width 0) (type default))
     (uuid d0230fc8-4e2f-41f4-9c52-c6261b95469f)
   )
+  (wire (pts (xy 69.85 125.73) (xy 74.93 125.73))
+    (stroke (width 0) (type default))
+    (uuid d185f670-442f-4c84-ac68-9db5af68ce37)
+  )
   (wire (pts (xy 177.8 54.61) (xy 177.8 60.96))
     (stroke (width 0) (type default))
     (uuid d412643f-7708-45d5-a0a3-8ca6e3ee36cf)
+  )
+  (wire (pts (xy 140.97 71.12) (xy 140.97 72.39))
+    (stroke (width 0) (type default))
+    (uuid d4bd989d-87d7-4235-9661-452f3cf0049a)
   )
   (wire (pts (xy 87.63 173.99) (xy 87.63 172.72))
     (stroke (width 0) (type default))
@@ -2167,6 +2207,14 @@
     (stroke (width 0) (type default))
     (uuid e5b4e076-1f78-4fa5-9887-e8c387a7eb08)
   )
+  (wire (pts (xy 140.97 144.78) (xy 140.97 147.32))
+    (stroke (width 0) (type default))
+    (uuid e619152f-daf2-42c4-a291-714949ee27a5)
+  )
+  (wire (pts (xy 140.97 125.73) (xy 153.67 125.73))
+    (stroke (width 0) (type default))
+    (uuid e7cf5c74-3b26-4104-b008-2712d38cf2bb)
+  )
   (wire (pts (xy 153.67 114.3) (xy 157.48 114.3))
     (stroke (width 0) (type default))
     (uuid e932ac37-266e-4d1b-9163-777b2ac6c593)
@@ -2178,6 +2226,10 @@
   (wire (pts (xy 243.84 33.02) (xy 243.84 38.1))
     (stroke (width 0) (type default))
     (uuid ecd24f71-02be-41ef-bcb0-7a6d9f73857f)
+  )
+  (wire (pts (xy 140.97 71.12) (xy 142.24 71.12))
+    (stroke (width 0) (type default))
+    (uuid ee1e5f83-e50a-4081-9dfe-dbf4b0c46c2f)
   )
   (wire (pts (xy 177.8 147.32) (xy 182.88 147.32))
     (stroke (width 0) (type default))
@@ -2219,6 +2271,10 @@
     (stroke (width 0) (type default))
     (uuid f750dc42-41e1-4900-a67f-6c82f0c62be3)
   )
+  (wire (pts (xy 140.97 114.3) (xy 142.24 114.3))
+    (stroke (width 0) (type default))
+    (uuid f7c48471-7ac1-4a2d-9986-fc20416727e4)
+  )
   (wire (pts (xy 266.7 73.66) (xy 266.7 76.2))
     (stroke (width 0) (type default))
     (uuid f994eb2a-9323-410d-961f-84ec24bd817a)
@@ -2244,7 +2300,7 @@
     (uuid ffbbc3cf-6113-40a8-9516-4b596dd91788)
   )
 
-  (text "https://tinyurl.com/2b23mtv8" (exclude_from_sim no)
+  (text "https://tinyurl.com/26gsxq4a" (exclude_from_sim no)
  (at 153.67 157.48 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1d9a0ea2-fc49-4c6c-9456-1c22a6196178)
@@ -2264,16 +2320,20 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 013dd832-7041-4c4f-9239-51ae2d61009e)
   )
-  (label "DOUT3" (at 140.97 92.71 180) (fields_autoplaced)
+  (label "DOUT3" (at 139.7 92.71 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 07202cf2-4592-4343-b14b-08f267e4ae26)
   )
+  (label "DISP" (at 69.85 128.27 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 0ebd1074-e9fc-4fe6-bb11-261c85a2da56)
+  )
   (label "SCL" (at 229.87 40.64 180) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify right bottom))
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 0ff64499-ef78-4707-bec1-a8276d1965da)
   )
   (label "TARIFF" (at 41.91 78.74 180) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify right bottom))
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 10f89bfe-07d2-4f29-8bc8-603b8ed77d82)
   )
   (label "LED" (at 241.3 99.06 180) (fields_autoplaced)
@@ -2281,10 +2341,10 @@
     (uuid 1ff93f11-5901-4e2e-a5d7-be5f98396184)
   )
   (label "SDA" (at 41.91 71.12 180) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify right bottom))
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2a4fff79-57fe-42c0-80ed-9deaa7e85af1)
   )
-  (label "DOUT2" (at 140.97 71.12 180) (fields_autoplaced)
+  (label "DOUT2" (at 139.7 71.12 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 355fa8dc-676b-4fbe-b373-651645eb502f)
   )
@@ -2296,13 +2356,17 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 438c2d52-933d-42fd-8359-a7e23cacd477)
   )
-  (label "DOUT1" (at 140.97 49.53 180) (fields_autoplaced)
+  (label "DOUT1" (at 139.7 49.53 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4a5b4ce3-e6e3-4b43-b68c-2a9069d7a236)
   )
-  (label "DOUT5" (at 140.97 135.89 180) (fields_autoplaced)
+  (label "DOUT5" (at 139.7 135.89 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4fe88f27-fad9-44b2-9b93-4445b3c18f41)
+  )
+  (label "DISP" (at 96.52 50.8 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 511c0db6-01e0-46f7-a920-2b1a43192a70)
   )
   (label "LED" (at 41.91 68.58 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -2328,12 +2392,12 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 7c576cc6-8ea1-4753-bf3f-0d09d27728b2)
   )
-  (label "DOUT0" (at 140.97 27.94 180) (fields_autoplaced)
+  (label "DOUT0" (at 139.7 27.94 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8de90d1f-3754-4c9d-8a95-3e6d41ec09df)
   )
   (label "SDA" (at 229.87 38.1 180) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify right bottom))
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ac8c28b4-522d-416a-95aa-9d25b194ef5e)
   )
   (label "AOUT1" (at 246.38 68.58 180) (fields_autoplaced)
@@ -2353,7 +2417,7 @@
     (uuid c217af00-3928-4ed6-81a8-d2e3d6a7b17a)
   )
   (label "TARIFF" (at 273.05 134.62 0) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify left bottom))
+    (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ccdf8b98-e455-43be-8508-5d99b8e5d0e7)
   )
   (label "DOUT0" (at 41.91 48.26 180) (fields_autoplaced)
@@ -2368,12 +2432,12 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ea6ea003-fcf2-4113-8ff5-382a130d3d43)
   )
-  (label "DOUT4" (at 140.97 114.3 180) (fields_autoplaced)
+  (label "DOUT4" (at 139.7 114.3 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid eb0f094a-fac9-419e-bc1e-1fcb3947258d)
   )
   (label "SCL" (at 41.91 73.66 180) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify right bottom))
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid f3eb0df5-534d-415d-928d-e3d89c7909f4)
   )
   (label "DOUT3" (at 41.91 55.88 180) (fields_autoplaced)
@@ -2392,13 +2456,13 @@
   (symbol (lib_id "Device:R") (at 248.92 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005762449b)
-    (property "Reference" "R31" (at 248.92 93.98 90)
+    (property "Reference" "R38" (at 248.92 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "270R" (at 248.92 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 248.92 100.838 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 248.92 100.838 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 248.92 99.06 0)
@@ -2407,9 +2471,9 @@
     (pin "1" (uuid 81a1c876-6e71-409a-8bab-309c25520501))
     (pin "2" (uuid a5121d3b-b2b1-4843-8a60-16fc16252d43))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R31") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -2424,7 +2488,7 @@
     (property "Value" "LED" (at 256.54 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 256.54 99.06 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 256.54 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 256.54 99.06 0)
@@ -2433,7 +2497,7 @@
     (pin "1" (uuid 58ff32a0-7b1f-4649-bd29-7c967df7398c))
     (pin "2" (uuid 7e1aea26-f609-4a5f-9f85-2512604ca859))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "D1") (unit 1)
         )
@@ -2469,7 +2533,7 @@
     (pin "8" (uuid 4ad03b53-fd9a-4c3f-8850-0c33321cda6c))
     (pin "9" (uuid 18b4b8f7-cb3d-4d36-a8c8-2d9e2845eb1e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "DO1") (unit 1)
         )
@@ -2480,13 +2544,13 @@
   (symbol (lib_id "Device:R") (at 238.76 29.21 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a981934)
-    (property "Reference" "R29" (at 233.68 29.21 90)
+    (property "Reference" "R36" (at 233.68 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 236.22 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 240.538 29.21 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 240.538 29.21 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 238.76 29.21 0)
@@ -2495,9 +2559,9 @@
     (pin "1" (uuid 12547804-8334-427f-a98b-4f371aa66e88))
     (pin "2" (uuid c7d2dda6-31ad-4e19-bc0a-96e1334799c0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R29") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -2506,13 +2570,13 @@
   (symbol (lib_id "Device:R") (at 243.84 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a981b02)
-    (property "Reference" "R30" (at 248.92 29.21 90)
+    (property "Reference" "R37" (at 248.92 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 246.38 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 242.062 29.21 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 242.062 29.21 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 29.21 0)
@@ -2521,9 +2585,9 @@
     (pin "1" (uuid 679fcdb6-124f-4413-9581-883c46a38463))
     (pin "2" (uuid 686cc3e1-671b-4707-a41a-04ba6f48630d))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R30") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -2551,7 +2615,7 @@
     (pin "5" (uuid 80e49409-6876-4091-988d-592550f1a472))
     (pin "6" (uuid 14b10d9a-d622-424e-94dd-cf942b4ccbf0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "I2C1") (unit 1)
         )
@@ -2562,7 +2626,7 @@
   (symbol (lib_id "power:GND") (at 256.54 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a983e03)
-    (property "Reference" "#PWR029" (at 256.54 50.8 0)
+    (property "Reference" "#PWR023" (at 256.54 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 256.54 48.26 0)
@@ -2576,33 +2640,33 @@
     )
     (pin "1" (uuid 59bd68ed-7a94-4538-b678-1280ba8e0cc9))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 26.67 127 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 26.67 129.54 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a985381)
-    (property "Reference" "X1" (at 26.67 124.46 0)
+    (property "Reference" "X1" (at 26.67 132.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "MAINS" (at 26.67 132.08 0)
+    (property "Value" "12V" (at 26.67 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Drake:DG235-3.81-02P" (at 26.67 127 0)
+    (property "Footprint" "Drake:DG235-3.81-02P" (at 26.67 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 26.67 127 0)
+    (property "Datasheet" "~" (at 26.67 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f8827b28-d808-462d-9f2f-a8a88eb98905))
     (pin "2" (uuid 5f1c9868-7b57-499c-9cc8-47452b7d906b))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "X1") (unit 1)
         )
@@ -2613,7 +2677,7 @@
   (symbol (lib_id "Isolator:LTV-354T") (at 241.3 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9ad6dd)
-    (property "Reference" "U2" (at 235.966 127.254 0)
+    (property "Reference" "U7" (at 235.966 127.254 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LTV-354T" (at 241.3 127 0)
@@ -2630,9 +2694,9 @@
     (pin "3" (uuid a589a880-91b3-45c3-8991-d0e9bb488a59))
     (pin "4" (uuid c727e12e-345d-423c-a70f-90fcf3968226))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U2") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -2656,7 +2720,7 @@
     (pin "1" (uuid 0b5f9327-1722-4bcf-a12c-84ae55843ad1))
     (pin "2" (uuid 61f76213-efaf-4b8d-b291-d81ecbf88c40))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "X2") (unit 1)
         )
@@ -2667,7 +2731,7 @@
   (symbol (lib_id "Device:C") (at 222.25 129.54 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9ae4f4)
-    (property "Reference" "C4" (at 220.98 123.19 90)
+    (property "Reference" "C21" (at 220.98 123.19 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 219.71 125.73 90)
@@ -2682,9 +2746,9 @@
     (pin "1" (uuid f4160e57-8ded-460d-a512-b40bd41948e3))
     (pin "2" (uuid 35015218-8362-4a51-9d0f-47a62216a97f))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C4") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -2693,7 +2757,7 @@
   (symbol (lib_id "Device:R") (at 229.87 129.54 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9ae9a5)
-    (property "Reference" "R2" (at 229.87 124.46 90)
+    (property "Reference" "R35" (at 229.87 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 229.87 127 90)
@@ -2708,9 +2772,9 @@
     (pin "1" (uuid c38225c0-2ca8-43e2-95d4-b95aa5966895))
     (pin "2" (uuid 4ac195bd-0ea4-441b-9720-c5e32027e2e0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R2") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -2719,13 +2783,13 @@
   (symbol (lib_id "Device:R") (at 257.81 134.62 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9b106d)
-    (property "Reference" "R3" (at 257.81 129.54 90)
+    (property "Reference" "R39" (at 257.81 129.54 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 257.81 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 257.81 136.398 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 257.81 136.398 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 257.81 134.62 0)
@@ -2734,9 +2798,9 @@
     (pin "1" (uuid 13b33192-5ca2-44a0-ad38-620a5da319b9))
     (pin "2" (uuid d5483e88-e70f-4516-ad1c-fd6ea41c2f7e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R3") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -2745,13 +2809,13 @@
   (symbol (lib_id "Device:C") (at 261.62 142.24 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9b11d1)
-    (property "Reference" "C6" (at 257.81 140.97 0)
+    (property "Reference" "C22" (at 257.81 140.97 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 257.81 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 260.6548 138.43 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 260.6548 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 261.62 142.24 0)
@@ -2760,9 +2824,9 @@
     (pin "1" (uuid 55990ab5-d55b-4e06-bc29-1a13c5cbc4b4))
     (pin "2" (uuid 34ae64b4-5449-4197-8dfa-84389579b8bc))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C6") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -2771,13 +2835,13 @@
   (symbol (lib_id "Device:R") (at 267.97 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9b12a2)
-    (property "Reference" "R4" (at 271.78 140.97 0)
+    (property "Reference" "R40" (at 271.78 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 271.78 143.51 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 266.192 142.24 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 266.192 142.24 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 267.97 142.24 0)
@@ -2786,9 +2850,9 @@
     (pin "1" (uuid aa091d39-4484-4016-a8f2-3b718aba9d33))
     (pin "2" (uuid c7e46e10-2667-4090-969e-d401cc727a15))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R4") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -2797,7 +2861,7 @@
   (symbol (lib_id "power:GND") (at 261.62 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9b14a8)
-    (property "Reference" "#PWR011" (at 261.62 152.4 0)
+    (property "Reference" "#PWR024" (at 261.62 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.62 149.86 0)
@@ -2811,9 +2875,9 @@
     )
     (pin "1" (uuid f9f928fd-3c84-4efa-98e8-9d57939bfae7))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -2822,7 +2886,7 @@
   (symbol (lib_id "power:GND") (at 267.97 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005a9b1531)
-    (property "Reference" "#PWR013" (at 267.97 152.4 0)
+    (property "Reference" "#PWR027" (at 267.97 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 267.97 149.86 0)
@@ -2836,9 +2900,9 @@
     )
     (pin "1" (uuid 668e4352-af5e-4a9d-8568-4e06001e8960))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -2853,7 +2917,7 @@
     (property "Value" "1u" (at 29.21 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 30.48 42.2148 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 30.48 42.2148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 26.67 43.18 0)
@@ -2872,7 +2936,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "C1") (unit 1)
         )
@@ -2907,9 +2971,9 @@
           (reference "#PWR0106") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2943,9 +3007,9 @@
           (reference "C5") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C25") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -2973,9 +3037,9 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -3009,7 +3073,7 @@
           (reference "L2") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "L1") (unit 1)
         )
@@ -3020,7 +3084,7 @@
   (symbol (lib_id "power:GND") (at 266.7 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 138dc066-4cd0-4610-9c00-8a5fbaea0789)
-    (property "Reference" "#PWR031" (at 266.7 85.09 0)
+    (property "Reference" "#PWR026" (at 266.7 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 266.7 82.8755 0)
@@ -3034,34 +3098,34 @@
     )
     (pin "1" (uuid 6165bc7b-08f6-49d2-9ea6-aaf89f5b2a72))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+12V") (at 59.69 124.46 270) (unit 1)
+  (symbol (lib_id "power:+12V") (at 34.29 127 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17860056-f22c-48cf-9579-5c6bffd8ca71)
-    (property "Reference" "#PWR06" (at 55.88 124.46 0)
+    (property "Reference" "#PWR05" (at 30.48 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+12V" (at 62.865 124.7768 90)
+    (property "Value" "+12V" (at 37.465 127.3168 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 59.69 124.46 0)
+    (property "Footprint" "" (at 34.29 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 59.69 124.46 0)
+    (property "Datasheet" "" (at 34.29 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 516aca6a-6810-469b-88b8-e1a088126597))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -3070,13 +3134,13 @@
   (symbol (lib_id "Device:C") (at 167.64 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d871f34-4de0-4aee-9740-9f9d821aedd8)
-    (property "Reference" "C21" (at 163.83 116.84 0)
+    (property "Reference" "C19" (at 163.83 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 123.19 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 119.38 0)
@@ -3085,9 +3149,9 @@
     (pin "1" (uuid 4fca9ef2-83f4-40b6-bb23-5196d2567aa5))
     (pin "2" (uuid f6c66758-e3c6-4cfd-b41a-d6ca51798362))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C21") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -3096,7 +3160,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 52.07 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 23caf900-35b5-4575-b209-c6c7bce98917)
-    (property "Reference" "U5" (at 185.42 43.9801 0)
+    (property "Reference" "U4" (at 185.42 43.9801 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 45.9011 0)
@@ -3117,48 +3181,9 @@
     (pin "4" (uuid d308e577-679c-4b90-8b67-67c210338726))
     (pin "8" (uuid e7b2aec4-8f52-4f43-83d6-e8f74dcbf22e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U5") (unit 2)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 234.95 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 281cb89e-ed8b-4d23-8216-d2aceabd273c)
-    (property "Reference" "H1" (at 234.6332 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "MountingHole" (at 233.6727 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.7mm_Pad_Via" (at 234.95 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 234.95 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "cpu"
-        (path "/311bb903-b598-4d0a-b7e9-7724eb082834"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "det"
-        (path "/654bbdff-d7be-460b-a8db-e4cb96f7d45c"
-          (reference "H4") (unit 1)
-        )
-      )
-      (project "hvs"
-        (path "/90865a01-13da-4333-8685-565ecb962862"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "DO6TS1A"
-        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "H1") (unit 1)
+          (reference "U4") (unit 2)
         )
       )
     )
@@ -3167,13 +3192,13 @@
   (symbol (lib_id "Device:C") (at 167.64 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29b52ee9-d890-40ba-b756-de573d39dd6a)
-    (property "Reference" "C18" (at 163.83 52.07 0)
+    (property "Reference" "C16" (at 163.83 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 54.61 0)
@@ -3182,48 +3207,9 @@
     (pin "1" (uuid c91dd76b-5458-48ab-9f50-66b26e334840))
     (pin "2" (uuid ab0a97f7-802f-4801-9954-813177bf0f58))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 245.11 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2da916c1-5de9-49c6-b7f4-f54ce71b5f5f)
-    (property "Reference" "H1" (at 244.7932 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "MountingHole" (at 243.8327 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.7mm_Pad_Via" (at 245.11 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 245.11 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "cpu"
-        (path "/311bb903-b598-4d0a-b7e9-7724eb082834"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "det"
-        (path "/654bbdff-d7be-460b-a8db-e4cb96f7d45c"
-          (reference "H4") (unit 1)
-        )
-      )
-      (project "hvs"
-        (path "/90865a01-13da-4333-8685-565ecb962862"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "DO6TS1A"
-        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "H3") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -3232,13 +3218,13 @@
   (symbol (lib_id "Device:R") (at 172.72 147.32 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e48c5d6-fc1a-4635-9d90-94b382a00ccc)
-    (property "Reference" "R22" (at 170.18 144.78 90)
+    (property "Reference" "R28" (at 170.18 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 145.542 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 145.542 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 147.32 0)
@@ -3247,9 +3233,9 @@
     (pin "1" (uuid 467ae7da-a1ab-4137-943b-812e3d4c5edd))
     (pin "2" (uuid 9642074f-c050-4a16-ad73-0ac24c0c5727))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R22") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -3258,13 +3244,13 @@
   (symbol (lib_id "Device:R") (at 172.72 104.14 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f5ac8ca-f5ec-4599-bb0e-e32f22f74c10)
-    (property "Reference" "R20" (at 170.18 101.6 90)
+    (property "Reference" "R26" (at 170.18 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 102.362 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 102.362 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 104.14 0)
@@ -3273,9 +3259,35 @@
     (pin "1" (uuid 81e32fa5-5861-4d56-8f52-246c0e081ba0))
     (pin "2" (uuid dcc36b04-8c3a-49f3-8bc4-4ccbebfb6e63))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R20") (unit 1)
+          (reference "R26") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 140.97 140.97 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3688d5d7-fd3b-4792-811a-d8c655d3913c)
+    (property "Reference" "R10" (at 144.78 139.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k" (at 144.78 142.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 140.97 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 140.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid af918bc0-20fb-4884-bca7-73f0d298cb39))
+    (pin "2" (uuid 1b95368a-6b18-46ad-87e2-f55183a3db0c))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -3284,7 +3296,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36c721e2-5753-4f71-8e9f-0c64bff36a4f)
-    (property "Reference" "U5" (at 185.42 22.3901 0)
+    (property "Reference" "U4" (at 185.42 22.3901 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 24.3111 0)
@@ -3305,9 +3317,9 @@
     (pin "4" (uuid 7333485f-7024-4627-88a3-1b96d7f6098c))
     (pin "8" (uuid 40bdd37a-c2a3-4613-803a-c86d520ba4da))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U5") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -3316,7 +3328,7 @@
   (symbol (lib_id "power:GND") (at 167.64 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b2fbeed-bcb2-4fff-9313-2f90da94bbcd)
-    (property "Reference" "#PWR024" (at 167.64 132.08 0)
+    (property "Reference" "#PWR017" (at 167.64 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 129.54 0)
@@ -3330,9 +3342,9 @@
     )
     (pin "1" (uuid fc52b0c6-8a87-4726-95a1-c0eed3c2d263))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3341,13 +3353,13 @@
   (symbol (lib_id "Device:C") (at 153.67 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 408db247-a6de-40dd-acc0-4a4d3d010746)
-    (property "Reference" "C14" (at 149.86 95.25 0)
+    (property "Reference" "C11" (at 149.86 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 101.6 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 97.79 0)
@@ -3356,9 +3368,9 @@
     (pin "1" (uuid fd7156c4-a155-4e94-a942-b0bdfdb75b50))
     (pin "2" (uuid 1666ad13-48fb-4944-b7bc-1ee00cf4e30a))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C14") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -3367,7 +3379,7 @@
   (symbol (lib_id "power:GND") (at 167.64 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40d6aabf-e4cb-49bf-a671-60c1d923382b)
-    (property "Reference" "#PWR025" (at 167.64 153.67 0)
+    (property "Reference" "#PWR018" (at 167.64 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 151.13 0)
@@ -3381,9 +3393,9 @@
     )
     (pin "1" (uuid 2a43a7c8-7aee-4ff2-a28a-eb1e7e65c732))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3411,9 +3423,9 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3441,9 +3453,35 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR021") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 140.97 119.38 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 469b89bd-40b7-46ad-9998-9048ba0e01e5)
+    (property "Reference" "R9" (at 144.78 118.11 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k" (at 144.78 120.65 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 119.38 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 119.38 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid fea20613-9a36-44ef-890b-790a183770b1))
+    (pin "2" (uuid afdaf4cc-60d6-43cb-8b0f-65b08f0a2c80))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -3452,7 +3490,7 @@
   (symbol (lib_id "power:GND") (at 167.64 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4cfede19-15b9-4670-84d2-7cbe98a35e35)
-    (property "Reference" "#PWR020" (at 167.64 45.72 0)
+    (property "Reference" "#PWR013" (at 167.64 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 43.18 0)
@@ -3466,9 +3504,9 @@
     )
     (pin "1" (uuid 696f1fa6-9dca-40aa-99da-ed291a2960d0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3477,13 +3515,13 @@
   (symbol (lib_id "Device:R") (at 161.29 135.89 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 524e4923-99ef-4de3-860b-682cfa1de056)
-    (property "Reference" "R16" (at 158.75 133.35 90)
+    (property "Reference" "R22" (at 158.75 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 137.668 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 137.668 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 135.89 0)
@@ -3492,9 +3530,9 @@
     (pin "1" (uuid 14f4530c-c138-4341-b538-580465a0c05e))
     (pin "2" (uuid 71b57ab2-f93e-4326-9a45-e99930a68cf4))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R16") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -3503,13 +3541,13 @@
   (symbol (lib_id "Device:R") (at 186.69 147.32 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5530bb55-9b58-4174-85d4-1f3de55c8fc4)
-    (property "Reference" "R28" (at 184.15 144.78 90)
+    (property "Reference" "R34" (at 184.15 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 149.098 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 149.098 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 147.32 0)
@@ -3518,9 +3556,9 @@
     (pin "1" (uuid 245bfba2-2be6-4cae-83ed-fea62b42f352))
     (pin "2" (uuid b0a9391f-13d0-48dd-869e-0b358b0aa994))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R28") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -3529,7 +3567,7 @@
   (symbol (lib_id "power:GND") (at 167.64 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55b1bbbe-4885-4c3e-89c4-3fab33163b22)
-    (property "Reference" "#PWR023" (at 167.64 110.49 0)
+    (property "Reference" "#PWR016" (at 167.64 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 107.95 0)
@@ -3543,9 +3581,9 @@
     )
     (pin "1" (uuid 70a7a9d0-33ba-42b7-a099-d5f165d4d099))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -3554,13 +3592,13 @@
   (symbol (lib_id "Device:C") (at 153.67 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55ff9e1b-b746-4c50-b308-fc61e313b0af)
-    (property "Reference" "C11" (at 149.86 30.48 0)
+    (property "Reference" "C8" (at 149.86 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 33.02 0)
@@ -3569,9 +3607,9 @@
     (pin "1" (uuid 33dcc1b2-9c71-4d23-b1ac-d5e0a517bd17))
     (pin "2" (uuid af0c7fec-715f-4e11-b9a6-26c2d2ce319a))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C11") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -3580,13 +3618,13 @@
   (symbol (lib_id "Device:R") (at 186.69 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 572a01a6-a9fb-449f-b32f-67ab49a01414)
-    (property "Reference" "R26" (at 184.15 101.6 90)
+    (property "Reference" "R32" (at 184.15 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 105.918 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 105.918 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 104.14 0)
@@ -3595,9 +3633,9 @@
     (pin "1" (uuid 9c9568f2-a1be-476a-be09-5815cc87411a))
     (pin "2" (uuid f7a8f403-8001-4de3-9f0e-d1de311dd244))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R26") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -3606,13 +3644,13 @@
   (symbol (lib_id "Device:R") (at 161.29 27.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 573506e1-4ebe-4dfa-beb6-38e75127a282)
-    (property "Reference" "R11" (at 158.75 25.4 90)
+    (property "Reference" "R17" (at 158.75 25.4 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 25.4 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 29.718 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 29.718 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 27.94 0)
@@ -3621,9 +3659,9 @@
     (pin "1" (uuid 226ffb19-5609-48a9-aab4-cdff959db503))
     (pin "2" (uuid 4fb8e1e8-ab75-4ae6-b959-b6e717a65367))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R11") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -3632,13 +3670,13 @@
   (symbol (lib_id "Device:R") (at 172.72 39.37 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f9e5628-218a-4ddf-909c-affcda52d758)
-    (property "Reference" "R17" (at 170.18 36.83 90)
+    (property "Reference" "R23" (at 170.18 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 37.592 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 37.592 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 39.37 0)
@@ -3647,9 +3685,9 @@
     (pin "1" (uuid 783da5c3-4587-486a-b486-af4650f9fa6f))
     (pin "2" (uuid d18f42e8-6b46-4d4f-a5d7-e332ef3e7d2c))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R17") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -3658,13 +3696,13 @@
   (symbol (lib_id "Device:R") (at 186.69 39.37 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 622d28b4-546a-41e3-8df3-05587af1518e)
-    (property "Reference" "R23" (at 184.15 36.83 90)
+    (property "Reference" "R29" (at 184.15 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 41.148 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 41.148 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 39.37 0)
@@ -3673,9 +3711,9 @@
     (pin "1" (uuid 4a4eed40-9b4f-4a5f-9944-34f8c88624c3))
     (pin "2" (uuid 89d387c3-09e0-40aa-a2f0-d290c1ddada1))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R23") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -3709,9 +3747,9 @@
           (reference "C8") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C26") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -3744,7 +3782,7 @@
           (reference "#PWR0107") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "#PWR01") (unit 1)
         )
@@ -3755,7 +3793,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 166.37 176.53 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6483a227-0484-44dc-934f-1a140e716299)
-    (property "Reference" "U7" (at 164.465 175.8863 0)
+    (property "Reference" "U6" (at 164.465 175.8863 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LM358" (at 164.465 177.8073 0)
@@ -3776,9 +3814,9 @@
     (pin "4" (uuid f4230d72-9451-405b-afc2-56df434c62bb))
     (pin "8" (uuid beda2b89-f4a6-4f5c-8cda-beb46f166923))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U7") (unit 3)
+          (reference "U6") (unit 3)
         )
       )
     )
@@ -3787,13 +3825,13 @@
   (symbol (lib_id "Device:R") (at 172.72 82.55 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a1296d9-bdd3-4795-ad28-78f77cc8971d)
-    (property "Reference" "R19" (at 170.18 80.01 90)
+    (property "Reference" "R25" (at 170.18 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 80.772 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 80.772 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 82.55 0)
@@ -3802,9 +3840,9 @@
     (pin "1" (uuid 8a5847b3-330c-446f-a7f8-452dc2b1242c))
     (pin "2" (uuid a4794a01-48c1-4d48-a6e6-1855467ffcc3))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R19") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -3832,48 +3870,9 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 240.03 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6c21f54e-479c-4231-99b8-56f3ba2625c6)
-    (property "Reference" "H1" (at 239.7132 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "MountingHole" (at 238.7527 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.7mm_Pad_Via" (at 240.03 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 240.03 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "cpu"
-        (path "/311bb903-b598-4d0a-b7e9-7724eb082834"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "det"
-        (path "/654bbdff-d7be-460b-a8db-e4cb96f7d45c"
-          (reference "H4") (unit 1)
-        )
-      )
-      (project "hvs"
-        (path "/90865a01-13da-4333-8685-565ecb962862"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "DO6TS1A"
-        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "H2") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -3914,7 +3913,7 @@
     (pin "8" (uuid a5b5db90-28f3-4444-ac09-3ec12f18d5d9))
     (pin "9" (uuid f9fd0269-e4b1-4399-aa08-4f242392481c))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "U3") (unit 1)
         )
@@ -3925,13 +3924,13 @@
   (symbol (lib_id "Device:R") (at 146.05 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 70484952-1750-4268-bd00-fef0ad3cbefe)
-    (property "Reference" "R8" (at 143.51 90.17 90)
+    (property "Reference" "R14" (at 143.51 90.17 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 90.17 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 94.488 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 94.488 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 92.71 0)
@@ -3940,9 +3939,9 @@
     (pin "1" (uuid 37557e6b-f7c3-4b65-aa2c-11327d518bb7))
     (pin "2" (uuid 197512b8-fc14-4d49-85c5-fc92c5354140))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R8") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -3951,13 +3950,13 @@
   (symbol (lib_id "Device:R") (at 186.69 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 714ea9bb-0f69-4087-92da-454c3b40e470)
-    (property "Reference" "R24" (at 184.15 58.42 90)
+    (property "Reference" "R30" (at 184.15 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 62.738 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 62.738 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 60.96 0)
@@ -3966,9 +3965,9 @@
     (pin "1" (uuid e044c27c-108f-4b88-af76-4dea2f863175))
     (pin "2" (uuid e3210759-5416-486a-9d23-8e5ee68d72b1))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R24") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -3977,7 +3976,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 148.59 176.53 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d765621-d4b9-41b6-b5a3-fa8c3f48290b)
-    (property "Reference" "U6" (at 146.685 175.8863 0)
+    (property "Reference" "U5" (at 146.685 175.8863 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LM358" (at 146.685 177.8073 0)
@@ -3998,9 +3997,9 @@
     (pin "4" (uuid 46fd7e03-2b10-4146-bc57-ad996228d3ae))
     (pin "8" (uuid fdc3536b-1cd4-4103-8cba-5c19a24f601c))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U6") (unit 3)
+          (reference "U5") (unit 3)
         )
       )
     )
@@ -4009,7 +4008,7 @@
   (symbol (lib_id "power:GND") (at 167.64 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7e8666b3-e936-434a-99f8-2129eb8ffa76)
-    (property "Reference" "#PWR022" (at 167.64 88.9 0)
+    (property "Reference" "#PWR015" (at 167.64 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 86.36 0)
@@ -4023,9 +4022,9 @@
     )
     (pin "1" (uuid a71e44d5-f9f9-481a-adf9-fc586f41d529))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4034,13 +4033,13 @@
   (symbol (lib_id "Device:C") (at 157.48 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81a46d26-a097-4545-99f7-eb24975d62c5)
-    (property "Reference" "C10" (at 157.48 173.99 0)
+    (property "Reference" "C14" (at 157.48 173.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 157.48 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 158.4452 180.34 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 158.4452 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 176.53 0)
@@ -4049,9 +4048,9 @@
     (pin "1" (uuid fd72bd70-42c7-424c-a1f6-c4164f5a0a6b))
     (pin "2" (uuid ecd67331-31c6-4abe-a542-509bfe05c5fa))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C10") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -4060,13 +4059,13 @@
   (symbol (lib_id "Device:R") (at 146.05 114.3 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 825ca0d7-ed68-4324-a367-7d1ea6d3ae0b)
-    (property "Reference" "R9" (at 143.51 111.76 90)
+    (property "Reference" "R15" (at 143.51 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 116.078 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 116.078 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 114.3 0)
@@ -4075,9 +4074,9 @@
     (pin "1" (uuid 35bec185-9a5d-4000-b6b3-eb208ceeef25))
     (pin "2" (uuid f399152e-a842-42b1-bce2-cf9d2617a4c4))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R9") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -4086,13 +4085,13 @@
   (symbol (lib_id "Device:C") (at 153.67 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 893b93a3-b706-4f96-ad5c-18e12b03608e)
-    (property "Reference" "C15" (at 149.86 116.84 0)
+    (property "Reference" "C12" (at 149.86 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 123.19 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 119.38 0)
@@ -4101,9 +4100,9 @@
     (pin "1" (uuid b4d722a6-1f84-48a4-9e12-85261c8b3abf))
     (pin "2" (uuid 6c55e5c5-6fb9-4a3e-82bc-ebfee4c88b64))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C15") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -4118,7 +4117,7 @@
     (property "Value" "10k" (at 34.29 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 38.608 39.37 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 38.608 39.37 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 39.37 0)
@@ -4143,7 +4142,7 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "R1") (unit 1)
         )
@@ -4173,9 +4172,9 @@
           (reference "#PWR017") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -4209,9 +4208,9 @@
           (reference "R7") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R34") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -4220,7 +4219,7 @@
   (symbol (lib_id "power:GND") (at 96.52 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ff214a3-13ff-4f8d-8a58-164f95065678)
-    (property "Reference" "#PWR014" (at 96.52 105.41 0)
+    (property "Reference" "#PWR08" (at 96.52 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 96.52 102.87 0)
@@ -4234,9 +4233,9 @@
     )
     (pin "1" (uuid c21f36c8-4152-4773-9d0c-2deb3a4e37d0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -4245,13 +4244,13 @@
   (symbol (lib_id "Device:R") (at 172.72 125.73 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9168dc5e-3189-4014-aafb-225ad8d99d6d)
-    (property "Reference" "R21" (at 170.18 123.19 90)
+    (property "Reference" "R27" (at 170.18 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 123.952 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 123.952 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 125.73 0)
@@ -4260,9 +4259,9 @@
     (pin "1" (uuid 53776c7c-a772-4021-a302-8351d2a9cb60))
     (pin "2" (uuid 33f8f1ce-a2a4-4326-913e-7f671fac5071))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R21") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -4296,9 +4295,9 @@
           (reference "R5") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R33") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -4307,13 +4306,13 @@
   (symbol (lib_id "Device:R") (at 146.05 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 940dafbe-df94-4c6c-b011-c563d289b3b0)
-    (property "Reference" "R6" (at 143.51 46.99 90)
+    (property "Reference" "R12" (at 143.51 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 51.308 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 51.308 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 49.53 0)
@@ -4322,9 +4321,9 @@
     (pin "1" (uuid ec0a3cca-1ace-4fdd-945d-233cdf0cf6ca))
     (pin "2" (uuid ca245c0e-a5f5-4311-9aef-e1f3fca41f12))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R6") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -4333,13 +4332,13 @@
   (symbol (lib_id "Device:C") (at 120.65 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 960e9629-aee6-4ad0-a215-47ab71497d9e)
-    (property "Reference" "C8" (at 120.65 173.99 0)
+    (property "Reference" "C6" (at 120.65 173.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 120.65 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 121.6152 180.34 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 121.6152 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 120.65 176.53 0)
@@ -4348,34 +4347,60 @@
     (pin "1" (uuid 1f3e9813-d312-4bfe-af88-4c0657f33db8))
     (pin "2" (uuid 12841c43-a467-4f27-b533-d1a9c4875583))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C8") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 59.69 132.08 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 34.29 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 963d702c-734d-40a0-a0fa-d5e7e2b88b00)
-    (property "Reference" "#PWR07" (at 66.04 132.08 0)
+    (property "Reference" "#PWR06" (at 40.64 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 62.9412 131.953 90)
+    (property "Value" "GND" (at 37.5412 129.413 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 59.69 132.08 0)
+    (property "Footprint" "" (at 34.29 129.54 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Datasheet" "" (at 59.69 132.08 0)
+    (property "Datasheet" "" (at 34.29 129.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (pin "1" (uuid f8e688cb-22c5-4703-8b18-09b2aebe52b8))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR06") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 140.97 76.2 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 96ae2193-fde2-42be-bb0e-85b1ae20abcf)
+    (property "Reference" "R7" (at 144.78 74.93 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k" (at 144.78 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 76.2 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 76.2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 0d3494fc-f113-4742-a48f-0ddfd8db63a4))
+    (pin "2" (uuid 1d8adf21-b0c9-450c-ab46-257122b34c17))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -4384,13 +4409,13 @@
   (symbol (lib_id "Device:C") (at 167.64 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 97419a00-0cd0-43c0-adb6-664b0bb2cffb)
-    (property "Reference" "C17" (at 163.83 30.48 0)
+    (property "Reference" "C15" (at 163.83 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 36.83 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 33.02 0)
@@ -4399,9 +4424,9 @@
     (pin "1" (uuid c0d369bc-77db-498e-a2fc-08a4394f8aef))
     (pin "2" (uuid 587a9de2-2c81-43c4-839c-3cf2c463fc12))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C17") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -4434,9 +4459,9 @@
           (reference "#PWR09") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -4445,13 +4470,13 @@
   (symbol (lib_id "Device:R") (at 186.69 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 98ed6186-f890-445f-9f4c-6fb7e2ace387)
-    (property "Reference" "R25" (at 184.15 80.01 90)
+    (property "Reference" "R31" (at 184.15 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 84.328 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 84.328 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 82.55 0)
@@ -4460,48 +4485,9 @@
     (pin "1" (uuid 04b4ec51-9d96-462a-85ee-1af8ff45f5d0))
     (pin "2" (uuid 1582758a-3738-4fa3-b31d-db3959076b2a))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R25") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 250.19 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 994d2358-c9f9-477a-baf2-8f8e8a87b29b)
-    (property "Reference" "H1" (at 249.8732 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "MountingHole" (at 248.9127 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.7mm_Pad_Via" (at 250.19 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 250.19 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "cpu"
-        (path "/311bb903-b598-4d0a-b7e9-7724eb082834"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "det"
-        (path "/654bbdff-d7be-460b-a8db-e4cb96f7d45c"
-          (reference "H4") (unit 1)
-        )
-      )
-      (project "hvs"
-        (path "/90865a01-13da-4333-8685-565ecb962862"
-          (reference "H1") (unit 1)
-        )
-      )
-      (project "DO6TS1A"
-        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "H4") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -4510,13 +4496,13 @@
   (symbol (lib_id "Device:R") (at 186.69 125.73 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 996bc0d0-2259-4cc2-9891-f18e251ee983)
-    (property "Reference" "R27" (at 184.15 123.19 90)
+    (property "Reference" "R33" (at 184.15 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56k" (at 189.23 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 186.69 127.508 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 186.69 127.508 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 186.69 125.73 0)
@@ -4525,37 +4511,35 @@
     (pin "1" (uuid 9db0c2d8-3eda-474d-85f9-4d88aed87411))
     (pin "2" (uuid 67568cfa-e726-439f-b04c-00a7e9f49ada))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R27") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Drake:PSU") (at 46.99 128.27 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 99a3d2dc-56f1-420f-8d85-4f1bc336716e)
-    (property "Reference" "U1" (at 46.99 118.6639 0)
-      (effects (font (size 1.524 1.524)))
+  (symbol (lib_id "Device:R") (at 140.97 97.79 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9c048e01-7355-4340-ac96-fd2c7253e75a)
+    (property "Reference" "R8" (at 144.78 96.52 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "YS-12V450A" (at 46.99 120.9181 0)
-      (effects (font (size 1.524 1.524)))
+    (property "Value" "100k" (at 144.78 99.06 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Drake:YS-12V450A" (at 46.99 128.27 0)
-      (effects (font (size 1.524 1.524)) hide)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 97.79 90)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 46.99 128.27 0)
-      (effects (font (size 1.524 1.524)) hide)
+    (property "Datasheet" "~" (at 140.97 97.79 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid 647f3345-71a6-4c1b-abcc-dbef0ae2f109))
-    (pin "2" (uuid 98195b43-1842-44a9-9e07-9b0dbe2ec674))
-    (pin "3" (uuid 932547c6-0483-4f72-894a-32fd2a39fab6))
-    (pin "4" (uuid c6764dd5-9e5f-408b-b78e-e3099c79f2e6))
+    (pin "1" (uuid 54d6f7a7-00fb-45c8-b3e5-ab3779e1103e))
+    (pin "2" (uuid b5eed3ed-5a66-40ed-a39c-94ad4c36caa4))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U1") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -4590,7 +4574,7 @@
           (reference "J4") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
           (reference "J1") (unit 1)
         )
@@ -4601,13 +4585,13 @@
   (symbol (lib_id "Device:R") (at 146.05 135.89 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a4b0f397-9deb-4929-8a43-0811595e5918)
-    (property "Reference" "R10" (at 143.51 133.35 90)
+    (property "Reference" "R16" (at 143.51 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 137.668 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 137.668 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 135.89 0)
@@ -4616,9 +4600,9 @@
     (pin "1" (uuid 07f1842f-a5fc-47af-b903-9c71fbddec3a))
     (pin "2" (uuid 41b19077-aa8b-46aa-a131-c21e2729cf37))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R10") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -4627,7 +4611,7 @@
   (symbol (lib_id "power:GND") (at 167.64 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aa9a7b29-1ec9-4ce7-acf3-4d185b23cf38)
-    (property "Reference" "#PWR021" (at 167.64 67.31 0)
+    (property "Reference" "#PWR014" (at 167.64 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 64.77 0)
@@ -4641,9 +4625,9 @@
     )
     (pin "1" (uuid ab02fd02-09cd-4702-9a77-c025508cc86e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -4677,9 +4661,9 @@
           (reference "C7") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C24") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -4688,13 +4672,13 @@
   (symbol (lib_id "Device:R") (at 161.29 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid af08c7d0-0fca-445f-a6e2-06abec207269)
-    (property "Reference" "R12" (at 158.75 46.99 90)
+    (property "Reference" "R18" (at 158.75 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 51.308 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 51.308 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 49.53 0)
@@ -4703,9 +4687,9 @@
     (pin "1" (uuid ef6e5e16-771f-43b5-a79b-9b398e7f7203))
     (pin "2" (uuid 715561ef-fa63-409a-bc5c-a296e20e84bc))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R12") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -4739,9 +4723,9 @@
           (reference "R4") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R32") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4750,13 +4734,13 @@
   (symbol (lib_id "Device:R") (at 172.72 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b40c1540-03d3-403d-a7db-d4ea6694a369)
-    (property "Reference" "R18" (at 170.18 58.42 90)
+    (property "Reference" "R24" (at 170.18 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 175.26 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 172.72 59.182 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 172.72 59.182 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 60.96 0)
@@ -4765,9 +4749,9 @@
     (pin "1" (uuid c7353519-57c8-4ca0-aec1-eafe0e709991))
     (pin "2" (uuid 5904e462-1455-4885-8fd9-5b3531b29652))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R18") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -4776,13 +4760,13 @@
   (symbol (lib_id "Device:R") (at 161.29 114.3 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba366449-32e4-4a28-b620-6a2978f29f19)
-    (property "Reference" "R15" (at 158.75 111.76 90)
+    (property "Reference" "R21" (at 158.75 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 116.078 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 116.078 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 114.3 0)
@@ -4791,9 +4775,9 @@
     (pin "1" (uuid 8cbc98cc-68a8-4a97-bf88-a27987b97cae))
     (pin "2" (uuid 20ef4753-5b2e-4e0b-86ef-a7c4f4c8ed39))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R15") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -4802,13 +4786,13 @@
   (symbol (lib_id "Device:C") (at 167.64 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bbcdd7e7-74bb-4385-8f88-8f3ae7e99786)
-    (property "Reference" "C20" (at 163.83 95.25 0)
+    (property "Reference" "C18" (at 163.83 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 101.6 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 97.79 0)
@@ -4817,9 +4801,9 @@
     (pin "1" (uuid 1d59695a-380b-405d-a6d0-166e4127249f))
     (pin "2" (uuid 796eb076-cbc1-46d6-a1e8-55fa46db1817))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C20") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -4857,9 +4841,9 @@
           (reference "U2") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U8") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4892,9 +4876,9 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -4903,7 +4887,7 @@
   (symbol (lib_id "power:+12V") (at 142.24 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c031d979-6380-424f-976b-19f25fd4d033)
-    (property "Reference" "#PWR018" (at 142.24 172.72 0)
+    (property "Reference" "#PWR011" (at 142.24 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 142.24 165.4081 0)
@@ -4917,9 +4901,9 @@
     )
     (pin "1" (uuid 8f5e5887-4cec-46e2-aac9-b72176b5a1ae))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -4928,7 +4912,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 138.43 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c33eb1cc-fa03-4506-b5cf-380e031afefb)
-    (property "Reference" "U7" (at 185.42 130.3401 0)
+    (property "Reference" "U6" (at 185.42 130.3401 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 132.2611 0)
@@ -4949,9 +4933,35 @@
     (pin "4" (uuid d283d0d7-9082-4594-9d9a-325423cdf6cd))
     (pin "8" (uuid 28124bb3-441c-4842-8eea-e25bd01e3d69))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U7") (unit 2)
+          (reference "U6") (unit 2)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 140.97 33.02 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c511c878-b494-4fd1-9041-0433153849c0)
+    (property "Reference" "R5" (at 144.78 31.75 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k" (at 144.78 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 33.02 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 33.02 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 39aeb084-8c6f-4b14-8dc0-2009d97a25a1))
+    (pin "2" (uuid c780409b-3a1f-4a6d-8758-6618f6a4d44d))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -4979,9 +4989,9 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -4990,7 +5000,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9d4ead3-af23-4ab2-83d5-851b41de3c6d)
-    (property "Reference" "U7" (at 185.42 108.7501 0)
+    (property "Reference" "U6" (at 185.42 108.7501 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 110.6711 0)
@@ -5011,9 +5021,36 @@
     (pin "4" (uuid a1271478-0ab7-42a2-9b24-8f45e07913d2))
     (pin "8" (uuid 27e7434f-6cc5-4f07-b8e9-5061f83e9005))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U7") (unit 1)
+          (reference "U6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x03") (at 64.77 128.27 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ca190367-249c-4142-ac75-aa3f9c2b4a56)
+    (property "Reference" "J2" (at 64.77 120.3157 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Display" (at 64.77 122.7399 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 64.77 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 64.77 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4be4aca9-17ef-4793-8eea-b8223fbfc029))
+    (pin "2" (uuid 7d4ee187-ad59-45de-b4e4-c6cfd9441ed9))
+    (pin "3" (uuid f3d82c1e-0e04-459d-9d42-190c2da404ba))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -5022,13 +5059,13 @@
   (symbol (lib_id "Device:C") (at 153.67 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cabd3ac6-c1f2-4759-8c54-4f0f124a5268)
-    (property "Reference" "C12" (at 149.86 52.07 0)
+    (property "Reference" "C9" (at 149.86 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 58.42 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 54.61 0)
@@ -5037,9 +5074,9 @@
     (pin "1" (uuid 9f5a5c46-ba52-4271-ac2b-1671c503e14f))
     (pin "2" (uuid d2169057-3aa6-4dac-a1bd-ad6e319234cf))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C12") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -5048,13 +5085,13 @@
   (symbol (lib_id "Device:R") (at 146.05 27.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb29c388-42b9-485e-a079-f17b159656d7)
-    (property "Reference" "R5" (at 143.51 25.4 90)
+    (property "Reference" "R11" (at 143.51 25.4 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 25.4 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 29.718 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 29.718 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 27.94 0)
@@ -5063,9 +5100,35 @@
     (pin "1" (uuid 08548d2f-d760-4e56-b119-c0eadcdca495))
     (pin "2" (uuid 90bf77fc-d80b-4ed7-b8da-331c61170f23))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R5") (unit 1)
+          (reference "R11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 140.97 54.61 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cc3043ab-2345-4ce6-9be2-02fab3ccdc29)
+    (property "Reference" "R6" (at 144.78 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100k" (at 144.78 55.88 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 142.748 54.61 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 140.97 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid f7ae5b20-c490-4694-ba27-89131d15f844))
+    (pin "2" (uuid a3f9c54a-90ab-4090-a0fd-e974898b9288))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -5074,7 +5137,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 129.54 176.53 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc857099-1f73-40ac-abbd-17e336085c61)
-    (property "Reference" "U5" (at 127.635 175.8863 0)
+    (property "Reference" "U4" (at 127.635 175.8863 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LM358" (at 127.635 177.8073 0)
@@ -5095,9 +5158,9 @@
     (pin "4" (uuid 188ce8f1-d893-4dfc-8498-edd8b66337df))
     (pin "8" (uuid 29c667c6-bb03-4272-9a8b-fcfe60c139e4))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U5") (unit 3)
+          (reference "U4") (unit 3)
         )
       )
     )
@@ -5106,13 +5169,13 @@
   (symbol (lib_id "Device:R") (at 161.29 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd0669ac-5fd7-4050-9227-50691da4d8a4)
-    (property "Reference" "R13" (at 158.75 68.58 90)
+    (property "Reference" "R19" (at 158.75 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 72.898 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 72.898 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 71.12 0)
@@ -5121,9 +5184,9 @@
     (pin "1" (uuid 7e0c6a24-2f0b-4562-b199-d1568a8ab854))
     (pin "2" (uuid a0ef60dd-f820-43cb-bb20-1b907e2b47c9))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R13") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -5132,13 +5195,13 @@
   (symbol (lib_id "Device:C") (at 167.64 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce88f9cf-11d0-41c0-9e65-0ab9d165eed1)
-    (property "Reference" "C22" (at 163.83 138.43 0)
+    (property "Reference" "C20" (at 163.83 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 144.78 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 140.97 0)
@@ -5147,9 +5210,9 @@
     (pin "1" (uuid 951f57ba-ec94-443b-b87b-afae46ba3a60))
     (pin "2" (uuid 324a7b9b-0ec7-4242-9e5a-156d61c0d7c7))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C22") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -5158,7 +5221,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 95.25 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cef7688c-55fc-45fb-8082-f79ca2581ba6)
-    (property "Reference" "U6" (at 185.42 87.1601 0)
+    (property "Reference" "U5" (at 185.42 87.1601 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 89.0811 0)
@@ -5179,9 +5242,39 @@
     (pin "4" (uuid 1fb92a7f-c54e-4d60-9460-6b56c1aa9ad1))
     (pin "8" (uuid 3dd3955c-95f6-4fa7-88dc-6016ec9e94d7))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U6") (unit 2)
+          (reference "U5") (unit 2)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 74.93 125.73 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cfb185b8-4f83-48d1-9443-907538b43aec)
+    (property "Reference" "#PWR018" (at 71.12 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 80.01 125.73 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 74.93 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 74.93 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid df126c46-1063-481d-8fe9-812515e52ace))
+    (instances
+      (project "USB-I2C"
+        (path "/5b13e22f-f5b5-4779-af37-b76f138f1ec2"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -5190,7 +5283,7 @@
   (symbol (lib_id "power:GND") (at 262.89 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1f3bef6-dfb5-4fae-8c98-bc74b7767144)
-    (property "Reference" "#PWR030" (at 269.24 99.06 0)
+    (property "Reference" "#PWR025" (at 269.24 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 266.065 99.3768 90)
@@ -5204,9 +5297,9 @@
     )
     (pin "1" (uuid aa0510b4-988d-4e74-8b47-51a8d464ac37))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -5239,9 +5332,9 @@
           (reference "#PWR034") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -5250,13 +5343,13 @@
   (symbol (lib_id "Device:R") (at 146.05 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db8574a7-7261-413e-a13d-c7bc1dacb76d)
-    (property "Reference" "R7" (at 143.51 68.58 90)
+    (property "Reference" "R13" (at 143.51 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 148.59 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 146.05 72.898 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 146.05 72.898 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 71.12 0)
@@ -5265,9 +5358,9 @@
     (pin "1" (uuid d8bb797d-c5f0-4556-b52a-ea356c37122d))
     (pin "2" (uuid 943e2a40-1f4a-431d-8bc2-b7190e3d4c3c))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R7") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -5300,9 +5393,9 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -5311,13 +5404,13 @@
   (symbol (lib_id "Device:R") (at 161.29 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e3ea7d28-150a-4e04-810d-eaf89e122d61)
-    (property "Reference" "R14" (at 158.75 90.17 90)
+    (property "Reference" "R20" (at 158.75 90.17 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k5" (at 163.83 90.17 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 161.29 94.488 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 94.488 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 92.71 0)
@@ -5326,9 +5419,34 @@
     (pin "1" (uuid ebbc6663-9380-443b-9519-1c35bb144dfc))
     (pin "2" (uuid 02efec13-9730-4ae9-ab35-934d51485b7e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "R14") (unit 1)
+          (reference "R20") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 74.93 130.81 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e7127b65-b27d-462f-acce-24ac63d06a08)
+    (property "Reference" "#PWR028" (at 81.28 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 78.1812 130.683 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 74.93 130.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "" (at 74.93 130.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 548c6429-f1b7-4b85-9898-ea51827a830b))
+    (instances
+      (project "ssreg6"
+        (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -5337,13 +5455,13 @@
   (symbol (lib_id "Device:C") (at 138.43 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ecb3a1e1-cebe-4c1e-8af4-faacd936b76f)
-    (property "Reference" "C9" (at 138.43 173.99 0)
+    (property "Reference" "C7" (at 138.43 173.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 138.43 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 139.3952 180.34 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 139.3952 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 138.43 176.53 0)
@@ -5352,9 +5470,9 @@
     (pin "1" (uuid 7e0bc44d-5a6d-4bf0-b2ae-58165a124554))
     (pin "2" (uuid 82cfed9b-2a32-4aee-9b9c-9f3acb812fa4))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C9") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -5363,13 +5481,13 @@
   (symbol (lib_id "Device:C") (at 167.64 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f5a25525-e589-453c-89bc-0e1e78548f41)
-    (property "Reference" "C19" (at 163.83 73.66 0)
+    (property "Reference" "C17" (at 163.83 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 168.91 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 168.6052 80.01 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 168.6052 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 76.2 0)
@@ -5378,9 +5496,9 @@
     (pin "1" (uuid 18a37379-d262-45a9-9a4a-3b9eb60cfe15))
     (pin "2" (uuid 7c9ada2e-65d8-4888-9763-100d017e2b22))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C19") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -5389,7 +5507,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 185.42 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f8483b30-84aa-4293-a90e-d9a221eb3f33)
-    (property "Reference" "U6" (at 185.42 65.5701 0)
+    (property "Reference" "U5" (at 185.42 65.5701 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM358" (at 185.42 67.4911 0)
@@ -5410,9 +5528,9 @@
     (pin "4" (uuid d11abd30-222e-442d-8cda-d04aa2943322))
     (pin "8" (uuid 5ee091f7-2419-43d7-95e2-3abae15352a0))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "U6") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -5421,13 +5539,13 @@
   (symbol (lib_id "Device:C") (at 153.67 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f91b910c-f7f5-4b4e-9e58-43da48f72d96)
-    (property "Reference" "C13" (at 149.86 73.66 0)
+    (property "Reference" "C10" (at 149.86 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 80.01 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 76.2 0)
@@ -5436,9 +5554,9 @@
     (pin "1" (uuid 1d2e96fd-db16-4294-b876-0d508a4e5e3c))
     (pin "2" (uuid 03f79b50-479e-41d9-b66a-bfb3bdf2804e))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C13") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -5472,9 +5590,9 @@
           (reference "C6") (unit 1)
         )
       )
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C23") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -5483,13 +5601,13 @@
   (symbol (lib_id "Device:C") (at 153.67 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ff095f2f-ee4f-48a1-8a06-2677dc3bc0e0)
-    (property "Reference" "C16" (at 149.86 138.43 0)
+    (property "Reference" "C13" (at 149.86 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 154.94 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.6352 144.78 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 154.6352 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 140.97 0)
@@ -5498,9 +5616,9 @@
     (pin "1" (uuid f3acee88-c625-4224-9dee-7a505c2b9499))
     (pin "2" (uuid 5c1f1f3d-4204-4d82-801a-210690036102))
     (instances
-      (project "DO6TS1A"
+      (project "ssreg6"
         (path "/f72cb209-a2f6-4ae9-b164-45343d6f1b5f"
-          (reference "C16") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
