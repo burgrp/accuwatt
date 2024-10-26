@@ -244,7 +244,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/ce88f9cf-11d0-41c0-9e65-0ab9d165eed1")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -452,7 +454,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/893b93a3-b706-4f96-ad5c-18e12b03608e")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -660,7 +664,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/fb20a234-abc5-4d5e-9ded-f9bb5423dfca")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1035,7 +1041,7 @@
 			)
 		)
 	)
-	(footprint "Drake:ESP32-C3-WROOM-02 Handsolder"
+	(footprint "Drake:ESP32-C3-WROOM-02-Handsolder"
 		(layer "F.Cu")
 		(uuid "1db22f2a-71fb-4d58-b3c2-e7d46e96e244")
 		(at 121 38)
@@ -1044,8 +1050,7 @@
 		(property "Reference" "U3"
 			(at 0 -13 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "fbaff43e-86ac-4c45-aa7b-9f2521561169")
+			(uuid "dd03a1c3-2433-49d9-93fd-ca41740cf470")
 			(effects
 				(font
 					(size 1 1)
@@ -1056,7 +1061,7 @@
 		(property "Value" "ESP32-C3-WROOM-02"
 			(at 0 10.5 0)
 			(layer "F.Fab")
-			(uuid "652aac5b-6415-4211-bb08-3e185415bef9")
+			(uuid "65f4b184-f86f-4bea-9344-054fbdfb3fe8")
 			(effects
 				(font
 					(size 1 1)
@@ -1064,11 +1069,11 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Drake:ESP32-C3-WROOM-02-Handsolder"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc531250-4ad3-4b0c-9c8d-8ac67ae0ee20")
+			(uuid "3cff2bc9-2c6b-4e8c-b474-de0d6e592f7a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1076,11 +1081,11 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f5bf17b4-b19d-4015-a90d-f464d70df5e6")
+			(uuid "54a72570-164f-4561-b545-df35502c6863")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1092,7 +1097,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31a3afab-ddb4-4fd9-b0ef-d00e2c3d0a3f")
+			(uuid "464423b2-6b2d-49c1-8f53-bd15d1d94ee2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,6 +1106,7 @@
 			)
 		)
 		(path "/7047f211-3fd3-458e-8e24-e4f29ca41853")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1111,7 +1117,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "932fcf2a-5dfa-42a8-b647-c94f39a2b929")
+			(uuid "50f0511d-4173-42ea-89be-ad19e71aa9be")
 		)
 		(fp_line
 			(start -9 -11.25)
@@ -1121,7 +1127,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1b1fb831-a790-4ce4-ab0f-26bd3a6b3344")
+			(uuid "48db5f5d-1ed1-4191-a2ae-2d1f0bea4743")
 		)
 		(fp_line
 			(start -9 8.75)
@@ -1131,7 +1137,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f825f5f8-d320-4880-86e6-59a50f94875c")
+			(uuid "06f588d6-1f2d-4ed2-8ee7-9fc797147d86")
 		)
 		(fp_line
 			(start 9 -11.25)
@@ -1141,7 +1147,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "baee3279-079f-4350-b672-8c8b0fc21b1f")
+			(uuid "16146159-3e0b-446e-8742-c23cb736d8b3")
 		)
 		(fp_line
 			(start 9 -5.25)
@@ -1151,7 +1157,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c4fa39a8-bb40-4880-850f-81da887a29e2")
+			(uuid "8ad2b2b2-e113-43eb-8f35-232590347a21")
 		)
 		(fp_line
 			(start 9 9.25)
@@ -1161,7 +1167,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "61a16b47-2ac4-406c-8a29-4df15c1840e2")
+			(uuid "8f3dbbde-2cbe-42ba-9d7a-43de236de9f5")
 		)
 		(fp_line
 			(start 9.5 8.75)
@@ -1171,7 +1177,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b1a41350-3da3-4469-a313-007de49a7004")
+			(uuid "a0d88a57-9fca-45f5-805c-31575a12fb27")
 		)
 		(fp_line
 			(start -9 -11.25)
@@ -1181,7 +1187,7 @@
 				(type solid)
 			)
 			(layer "Eco2.User")
-			(uuid "b62c2933-1fe9-40e1-ba61-e2562b2b4c8c")
+			(uuid "15b70316-2b9b-4c96-9f4f-d086c164fdad")
 		)
 		(fp_line
 			(start -9 -5.25)
@@ -1191,7 +1197,7 @@
 				(type solid)
 			)
 			(layer "Eco2.User")
-			(uuid "7b9517da-7603-4427-b97b-78ef17bca7c6")
+			(uuid "381f4657-c2f4-42b7-bb31-5cd82abb93d6")
 		)
 		(fp_line
 			(start -9 8.75)
@@ -1201,7 +1207,7 @@
 				(type solid)
 			)
 			(layer "Eco2.User")
-			(uuid "e49ec9dd-6006-4671-99f5-a091a07cd85a")
+			(uuid "92ee6ab7-f358-44ad-81fe-f0f9d50d37b2")
 		)
 		(fp_line
 			(start 9 -11.25)
@@ -1211,7 +1217,7 @@
 				(type solid)
 			)
 			(layer "Eco2.User")
-			(uuid "b3720439-c61e-42b7-88cd-d0a291c089ce")
+			(uuid "eee3c383-1aa3-4b1b-807f-d0502d7ea793")
 		)
 		(fp_line
 			(start 9 8.75)
@@ -1221,7 +1227,7 @@
 				(type solid)
 			)
 			(layer "Eco2.User")
-			(uuid "f398e105-5df6-4c60-8644-28e5cdd43304")
+			(uuid "1bc1eb68-d97e-48e7-a0d8-d92044a763ed")
 		)
 		(fp_line
 			(start -10.8 -12)
@@ -1231,7 +1237,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6206b699-f2e4-4a0e-a210-0aa561dc989a")
+			(uuid "314484ba-d4e7-466e-81aa-d010fd977924")
 		)
 		(fp_line
 			(start 10.8 -12)
@@ -1241,7 +1247,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b5ab5b30-6833-4bfe-9d79-c083a9527d26")
+			(uuid "08ab737d-892c-4144-a700-717e1a60e152")
 		)
 		(fp_line
 			(start 10.8 9.5)
@@ -1251,7 +1257,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "085fde4c-4add-4d34-a691-0d366982fb06")
+			(uuid "10886dfc-3ce1-4e2e-a960-10eac482683a")
 		)
 		(fp_line
 			(start 10.8 9.5)
@@ -1261,12 +1267,12 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "828f23c6-f7d4-428f-a12c-8da035c5fa09")
+			(uuid "a25cc2de-4474-4cf4-9c5e-52d295565110")
 		)
 		(fp_text user "Antenna Area"
 			(at 0 -8.65 0)
 			(layer "F.SilkS")
-			(uuid "974fcfa1-3d35-41fe-bee8-51951bf4d78a")
+			(uuid "111b2f1d-eb1c-49c6-b25f-faa7733d38cd")
 			(effects
 				(font
 					(size 1 1)
@@ -1277,7 +1283,7 @@
 		(fp_text user "Antenna Area"
 			(at 0 -8.65 0)
 			(layer "Eco2.User")
-			(uuid "a8e1d485-af9b-44c2-9976-f4e1b4641e24")
+			(uuid "13bfd0bb-5554-424e-b999-e887119c5ede")
 			(effects
 				(font
 					(size 1 1)
@@ -1288,7 +1294,7 @@
 		(fp_text user "REF**"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "a5dafb6b-4ed3-4538-a57b-01fe5bc9d51a")
+			(uuid "0de6903e-d8e6-41b0-b1e6-d3e5e2a54c78")
 			(effects
 				(font
 					(size 1 1)
@@ -1303,7 +1309,7 @@
 			(net 3 "+3V3")
 			(pinfunction "3V3")
 			(pintype "power_in")
-			(uuid "46290db1-2eac-4134-b328-7234d66b8153")
+			(uuid "a861fa3c-3369-48b2-a813-f384702681ae")
 		)
 		(pad "2" smd rect
 			(at -9.25 -2.65)
@@ -1312,7 +1318,7 @@
 			(net 2 "Net-(U3-EN{slash}CHIP_PU)")
 			(pinfunction "EN/CHIP_PU")
 			(pintype "input")
-			(uuid "4cd73d55-7d1c-4a9e-a611-b22d21051010")
+			(uuid "f372fa5e-ccf6-40e6-b8de-cc45467e26d7")
 		)
 		(pad "3" smd rect
 			(at -9.25 -1.15)
@@ -1321,7 +1327,7 @@
 			(net 35 "/DOUT4")
 			(pinfunction "GPIO4/ADC1_CH4")
 			(pintype "bidirectional")
-			(uuid "33d574d4-44f7-4865-ab84-a5c6c7fd1a18")
+			(uuid "4ec44892-397c-4920-b371-392a351bbfc5")
 		)
 		(pad "4" smd rect
 			(at -9.25 0.35)
@@ -1330,7 +1336,7 @@
 			(net 36 "/DOUT5")
 			(pinfunction "GPIO5/ADC2_CH0")
 			(pintype "bidirectional")
-			(uuid "3d3e3980-807f-4b16-b23c-1dba467cf32a")
+			(uuid "0af65bf0-0a3d-43f5-b7a1-a50ad48a72a3")
 		)
 		(pad "5" smd rect
 			(at -9.25 1.85)
@@ -1339,7 +1345,7 @@
 			(net 42 "/LED")
 			(pinfunction "GPIO6")
 			(pintype "bidirectional")
-			(uuid "eb56caef-2fdd-471b-9b60-a80736e05a19")
+			(uuid "3fc9f77f-1bd1-4d64-a04d-bb942fc138e3")
 		)
 		(pad "6" smd rect
 			(at -9.25 3.35)
@@ -1348,7 +1354,7 @@
 			(net 24 "/SDA")
 			(pinfunction "GPIO7")
 			(pintype "bidirectional")
-			(uuid "a5469b0b-c560-429f-aaca-eaef8304fff0")
+			(uuid "eed60f75-1d56-432d-8a9b-f11eb1656138")
 		)
 		(pad "7" smd rect
 			(at -9.25 4.85)
@@ -1357,7 +1363,7 @@
 			(net 23 "/SCL")
 			(pinfunction "GPIO8")
 			(pintype "bidirectional")
-			(uuid "1b78a848-11c6-4d4a-bc53-05a8cea28d15")
+			(uuid "541cba5f-2398-47d5-a94c-cb37d57bfcea")
 		)
 		(pad "8" smd rect
 			(at -9.25 6.35)
@@ -1366,7 +1372,7 @@
 			(net 44 "unconnected-(U3-GPIO9-Pad8)")
 			(pinfunction "GPIO9")
 			(pintype "bidirectional+no_connect")
-			(uuid "b61e5650-d3ef-4831-aa1c-b6da91f47fac")
+			(uuid "8f83cea9-abe7-4ebe-afea-89ed6cf7e964")
 		)
 		(pad "9" smd rect
 			(at -9.25 7.85)
@@ -1374,8 +1380,8 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 1 "GND")
 			(pinfunction "GND")
-			(pintype "power_in")
-			(uuid "d49ba6c3-3479-4fae-bc05-611f31703d4c")
+			(pintype "passive")
+			(uuid "2d9b21b2-3da3-4a17-b017-ee5f50e569ec")
 		)
 		(pad "10" smd rect
 			(at 9.25 7.85)
@@ -1384,7 +1390,7 @@
 			(net 7 "/TARIFF")
 			(pinfunction "GPIO10")
 			(pintype "bidirectional")
-			(uuid "8eb55d44-8d73-486e-929b-28a793acedb6")
+			(uuid "be49cb5e-85dd-40df-a6c0-8d90c54cb517")
 		)
 		(pad "11" smd rect
 			(at 9.25 6.35)
@@ -1393,7 +1399,7 @@
 			(net 45 "unconnected-(U3-GPIO20{slash}U0RXD-Pad11)")
 			(pinfunction "GPIO20/U0RXD")
 			(pintype "bidirectional+no_connect")
-			(uuid "d36c4713-8205-447c-ad8c-bc7b660333f2")
+			(uuid "b1a29a22-b901-45c5-aba2-e224bd85065b")
 		)
 		(pad "12" smd rect
 			(at 9.25 4.85)
@@ -1402,7 +1408,7 @@
 			(net 55 "/DISP")
 			(pinfunction "GPIO21/U0TXD")
 			(pintype "bidirectional")
-			(uuid "b08c46c9-b978-449d-8adc-93730da87571")
+			(uuid "d6e5235d-2bce-46cd-b5fb-e9835d3e21ee")
 		)
 		(pad "13" smd rect
 			(at 9.25 3.35)
@@ -1411,7 +1417,7 @@
 			(net 25 "Net-(J1-Pin_1)")
 			(pinfunction "GPIO18/USB_D-")
 			(pintype "bidirectional")
-			(uuid "6f79f06e-a2a2-4460-bfb2-e14f0831cc46")
+			(uuid "574406f6-5899-4bc1-ab49-a29e72d26181")
 		)
 		(pad "14" smd rect
 			(at 9.25 1.85)
@@ -1420,7 +1426,7 @@
 			(net 26 "Net-(J1-Pin_3)")
 			(pinfunction "GPIO19/USB_D+")
 			(pintype "bidirectional")
-			(uuid "0771e492-fc80-4c41-9051-916fc040b02f")
+			(uuid "6693a0dc-cce9-4e0b-8ca9-d8cb7f3502b0")
 		)
 		(pad "15" smd rect
 			(at 9.25 0.35)
@@ -1429,7 +1435,7 @@
 			(net 34 "/DOUT3")
 			(pinfunction "GPIO3/ADC1_CH3")
 			(pintype "bidirectional")
-			(uuid "a9bc7dfb-ddf7-446f-a668-bf22a4d618a7")
+			(uuid "a7a06317-cf65-40f7-affb-f039ca1a5105")
 		)
 		(pad "16" smd rect
 			(at 9.25 -1.15)
@@ -1438,7 +1444,7 @@
 			(net 33 "/DOUT2")
 			(pinfunction "GPIO2/ADC1_CH2")
 			(pintype "bidirectional")
-			(uuid "014650fd-e818-4975-a80c-dac632d052c9")
+			(uuid "c9e283dd-4de8-4936-867d-03f1e9dc7747")
 		)
 		(pad "17" smd rect
 			(at 9.25 -2.65)
@@ -1447,7 +1453,7 @@
 			(net 32 "/DOUT1")
 			(pinfunction "GPIO1/ADC1_CH1/XTAL_32K_N")
 			(pintype "bidirectional")
-			(uuid "ae53d9eb-7fe3-4388-b18e-b9c77471b1da")
+			(uuid "f2ec4236-bbb8-45b3-8bc8-4e40f0313085")
 		)
 		(pad "18" smd rect
 			(at 9.25 -4.15)
@@ -1456,7 +1462,7 @@
 			(net 31 "/DOUT0")
 			(pinfunction "GPIO0/ADC1_CH0/XTAL_32K_P")
 			(pintype "bidirectional")
-			(uuid "8428d1ed-0d4d-4777-b877-092eb49365f7")
+			(uuid "6b179b91-bbd6-4c97-a010-f31f311b1342")
 		)
 		(pad "19" smd rect
 			(at -0.14 0.95 180)
@@ -1465,7 +1471,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "7a4ff15d-fe54-4e74-8650-47917bd9e488")
+			(uuid "f4dda150-1d6b-4517-8728-c309d7d730f4")
 		)
 		(pad "19" smd rect
 			(at -0.14 2.05 180)
@@ -1474,7 +1480,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "87d713d7-e7fa-4180-a237-c13ecc3112ad")
+			(uuid "aecb5252-b331-4d2e-81ca-d8c990459d8d")
 		)
 		(pad "19" smd rect
 			(at -0.14 3.15 180)
@@ -1483,7 +1489,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "8e442c28-9174-410e-8f33-3d7511fe4233")
+			(uuid "fd7e397c-9893-4fbc-8876-5a73e636fe84")
 		)
 		(pad "19" smd rect
 			(at 0.91 0.95 180)
@@ -1492,7 +1498,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "c9fc0681-2bb7-48b6-a1bd-884b002c3382")
+			(uuid "90f13896-d225-4e5f-820e-1eedc154e0fd")
 		)
 		(pad "19" smd rect
 			(at 0.91 2.05 180)
@@ -1501,7 +1507,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "9c0dea32-e0e8-4ea4-af5c-49a6ef436258")
+			(uuid "4f061adb-03b1-4705-b13e-94c217027059")
 		)
 		(pad "19" smd rect
 			(at 0.91 3.15 180)
@@ -1510,7 +1516,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "a6b675c3-111d-456b-b4ca-547aac9ea247")
+			(uuid "b924f89c-3078-4b38-ad51-a5f236ebc52c")
 		)
 		(pad "19" smd rect
 			(at 2.06 0.95 180)
@@ -1519,7 +1525,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "fef33f89-b347-48da-94d7-2d4a06821792")
+			(uuid "eddba0c5-8993-4529-a15c-aae5a8d7bd3b")
 		)
 		(pad "19" smd rect
 			(at 2.06 2.05 180)
@@ -1528,7 +1534,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "d1a8b5d0-cd6a-4403-a96e-09a5c5fb4628")
+			(uuid "fa1ab12b-c50a-4fc7-872d-eeb5d7e031a4")
 		)
 		(pad "19" smd rect
 			(at 2.06 3.15 180)
@@ -1537,9 +1543,9 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "fe767e3a-762b-4903-806d-d5ac66dc18b7")
+			(uuid "8fc408cf-1c4f-4ea8-a421-e481a62f2b55")
 		)
-		(model "${ESPRESSIF_3DMODELS}/ESP32-C3-WROOM-02.STEP"
+		(model "${ESPRESSIF_3DMODELS}/espressif.3dshapes/ESP32-C3-WROOM-02.STEP"
 			(offset
 				(xyz -9 -8.75 0)
 			)
@@ -1579,7 +1585,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Drake:CKCS6028"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1615,7 +1621,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/0db17b18-4d9b-4a74-8219-dfdeb18d4ce1")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1827,7 +1835,7 @@
 			(pintype "passive")
 			(uuid "1bad6b1c-c440-4c0d-abf2-a9d0c3a80d57")
 		)
-		(model "${DRAKE}/footprints/CKCS6028.step"
+		(model "CKCS6028.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1903,7 +1911,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/8c82cc5b-d9c8-454d-97fa-90c823ecddfb")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2111,7 +2121,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2e48c5d6-fc1a-4635-9d90-94b382a00ccc")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2319,7 +2331,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3688d5d7-fd3b-4792-811a-d8c655d3913c")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2527,7 +2541,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/cabd3ac6-c1f2-4759-8c54-4f0f124a5268")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2735,7 +2751,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/408db247-a6de-40dd-acc0-4a4d3d010746")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2943,7 +2961,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9168dc5e-3189-4014-aafb-225ad8d99d6d")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3127,7 +3147,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3151,7 +3171,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/c9d4ead3-af23-4ab2-83d5-851b41de3c6d")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3461,7 +3483,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/70484952-1750-4268-bd00-fef0ad3cbefe")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3669,7 +3693,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/55ff9e1b-b746-4c50-b308-fc61e313b0af")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3877,7 +3903,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/cd0669ac-5fd7-4050-9227-50691da4d8a4")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4085,7 +4113,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/ecb3a1e1-cebe-4c1e-8af4-faacd936b76f")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4293,7 +4323,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f91b910c-f7f5-4b4e-9e58-43da48f72d96")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4501,7 +4533,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/bbcdd7e7-74bb-4385-8f88-8f3ae7e99786")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4709,7 +4743,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/b1989654-90ce-4e4f-bf54-cbd369839851")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4917,7 +4953,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/524e4923-99ef-4de3-860b-682cfa1de056")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5088,7 +5126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Drake:DG235-3.81-02P"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5124,7 +5162,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/00000000-0000-0000-0000-00005a9ae17c")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5326,7 +5366,7 @@
 			(pintype "passive")
 			(uuid "8fac15fe-3d48-4fbf-b7c2-37458634740d")
 		)
-		(model "${DRAKE}/footprints/DG235-3.81-02P.step"
+		(model "DG235-3.81-02P.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5404,6 +5444,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005a983748")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5880,7 +5921,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/6a1296d9-bdd3-4795-ad28-78f77cc8971d")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6088,7 +6131,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/573506e1-4ebe-4dfa-beb6-38e75127a282")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6296,7 +6341,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/96ae2193-fde2-42be-bb0e-85b1ae20abcf")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6504,7 +6551,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/ba366449-32e4-4a28-b620-6a2978f29f19")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6712,7 +6761,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ca190367-249c-4142-ac75-aa3f9c2b4a56")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6948,7 +6999,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Drake:DG235-3.81-02P"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6984,7 +7035,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/00000000-0000-0000-0000-00005a985381")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7186,7 +7239,7 @@
 			(pintype "passive")
 			(uuid "a9f3f4b4-823e-400c-a5f2-22447d454101")
 		)
-		(model "${DRAKE}/footprints/DG235-3.81-02P.step"
+		(model "DG235-3.81-02P.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7262,7 +7315,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/ad80f86d-8593-46ed-9487-fa1290e722a6")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7470,7 +7525,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5530bb55-9b58-4174-85d4-1f3de55c8fc4")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7678,7 +7735,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/007dc71c-493b-4024-ac92-560f7ae47854")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7886,7 +7945,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/0895200b-1ff5-42fe-b52e-837f2969dfe8")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8070,7 +8131,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/FR8205AS6CTR_C172765.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8095,6 +8156,7 @@
 			)
 		)
 		(path "/bc4d7948-580a-4ab8-adab-760da6ef4c49")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8386,7 +8448,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2f5ac8ca-f5ec-4599-bb0e-e32f22f74c10")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8594,7 +8658,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/960e9629-aee6-4ad0-a215-47ab71497d9e")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8803,7 +8869,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/00000000-0000-0000-0000-00005a97fffb")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9346,7 +9414,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/469b89bd-40b7-46ad-9998-9048ba0e01e5")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9554,7 +9624,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/81a46d26-a097-4545-99f7-eb24975d62c5")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9738,7 +9810,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9762,7 +9834,9 @@
 				)
 			)
 		)
-		(path "/cc857099-1f73-40ac-abbd-17e336085c61")
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
+		(path "/36c721e2-5753-4f71-8e9f-0c64bff36a4f")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10072,7 +10146,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/cb29c388-42b9-485e-a079-f17b159656d7")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10280,7 +10356,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f5a25525-e589-453c-89bc-0e1e78548f41")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10488,7 +10566,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/996bc0d0-2259-4cc2-9891-f18e251ee983")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10697,7 +10777,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9f35a5cd-a01a-4fd5-b617-4d1f428664ba")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10970,7 +11052,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/29b52ee9-d890-40ba-b756-de573d39dd6a")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11178,7 +11262,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/714ea9bb-0f69-4087-92da-454c3b40e470")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11386,7 +11472,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9c048e01-7355-4340-ac96-fd2c7253e75a")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11594,7 +11682,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/93ca921e-6839-42fa-8220-4bdb2582223c")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11802,7 +11892,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5f9e5628-218a-4ddf-909c-affcda52d758")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12010,7 +12102,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/572a01a6-a9fb-449f-b32f-67ab49a01414")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12218,7 +12312,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/b40c1540-03d3-403d-a7db-d4ea6694a369")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12426,7 +12522,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/ff095f2f-ee4f-48a1-8a06-2677dc3bc0e0")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12634,7 +12732,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/cc3043ab-2345-4ce6-9be2-02fab3ccdc29")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12842,7 +12942,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005a981b02")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13050,7 +13152,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/e3ea7d28-150a-4e04-810d-eaf89e122d61")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13258,7 +13362,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-000057624710")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13488,7 +13594,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/8f90cc4f-46e4-4ff4-85cd-804adbad52b2")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13696,7 +13804,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005a981934")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13904,7 +14014,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/626ebc30-b21c-4bd5-9f9e-190fe8e36e2f")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14343,7 +14455,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1d871f34-4de0-4aee-9740-9f9d821aedd8")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14551,7 +14665,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/a4b0f397-9deb-4929-8a43-0811595e5918")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14759,7 +14875,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/db8574a7-7261-413e-a13d-c7bc1dacb76d")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14967,7 +15085,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/97419a00-0cd0-43c0-adb6-664b0bb2cffb")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15175,7 +15295,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/c511c878-b494-4fd1-9041-0433153849c0")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15383,7 +15505,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/622d28b4-546a-41e3-8df3-05587af1518e")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15591,7 +15715,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005762449b")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15799,7 +15925,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/98ed6186-f890-445f-9f4c-6fb7e2ace387")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16007,7 +16135,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/af08c7d0-0fca-445f-a6e2-06abec207269")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16215,7 +16345,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/825ca0d7-ed68-4324-a367-7d1ea6d3ae0b")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16399,7 +16531,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16423,7 +16555,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/f8483b30-84aa-4293-a90e-d9a221eb3f33")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16733,7 +16867,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/940dafbe-df94-4c6c-b011-c563d289b3b0")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16943,7 +17079,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005a9ae9a5")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17154,7 +17292,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005a9ae4f4")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17365,7 +17505,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005a9b12a2")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17552,7 +17694,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17576,7 +17718,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SO*4.4x3.6mm*P2.54mm*")
 		(path "/00000000-0000-0000-0000-00005a9ad6dd")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(clearance 0.2)
 		(attr smd)
@@ -17864,7 +18008,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005a9b106d")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18075,7 +18221,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005a9b11d1")
+		(sheetname "Root")
 		(sheetfile "ssreg6.kicad_sch")
 		(attr smd)
 		(fp_line

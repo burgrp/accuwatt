@@ -9989,7 +9989,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-C3-WROOM-02"
+		(property "Footprint" "Drake:ESP32-C3-WROOM-02-Handsolder"
 			(at 68.58 97.79 0)
 			(effects
 				(font
