@@ -4,3 +4,9 @@
 [submodule "fw/sub/micropython-mqtt-reg"]
 	path = ssreg6/fw/sub/micropython-mqtt-reg
 	url = https://github.com/burgrp/micropython-mqtt-reg.git
+[submodule "sub/kicad-libraries"]
+	path = sub/kicad-libraries
+	url = https://github.com/espressif/kicad-libraries.git
+[submodule "sub/hw-kicad"]
+	path = sub/hw-kicad
+	url = git@github.com:burgrp/hw-kicad.git
