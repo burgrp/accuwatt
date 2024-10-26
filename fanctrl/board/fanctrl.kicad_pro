@@ -435,7 +435,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ssreg6.kicad_pro",
+    "filename": "fanctrl.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -588,6 +588,14 @@
     [
       "f72cb209-a2f6-4ae9-b164-45343d6f1b5f",
       "Root"
+    ],
+    [
+      "c6d242cc-c119-43fa-a371-acf1f8dc2ecf",
+      "Driver"
+    ],
+    [
+      "8dc6b00d-55a2-45fa-b01b-fb35e73d2854",
+      "Driver1"
     ]
   ],
   "text_variables": {}
