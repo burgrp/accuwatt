@@ -1,13 +1,2 @@
-*.bak
-*.bck
-*.kicad_pcb-bak
-*-cache.lib
-build
-nbproject
-node_modules
-Gerber
-gerber
-_autosave-*
+*.zip
 
-fw/deps
-fw/build
