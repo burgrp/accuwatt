@@ -7,15 +7,16 @@ import sys
 sys.path.append('/')
 import site_config
 import board_config
+import device_config
 
 print('DO6TS1A')
 
 i2c = I2C(0, scl=Pin(board_config.temp_scl), sda=Pin(board_config.temp_sda), freq=10000)
-pwms = list(map(lambda ch: PWM(Pin(ch), freq=board_config.pwm_frequency, duty=0), board_config.channels))
+pwms = list(map(lambda ch: PWM(Pin(ch), freq=board_config.pwm_frequency, duty=0), device_config.channels))
 wifi_led = Pin(board_config.wifi_led_pin, Pin.OUT)
 
-reg_prefix = site_config.name + '.'
-reg_device = site_config.name
+reg_prefix = device_config.name + '.'
+reg_device = device_config.name
 
 class ExtChannelRegister(mqtt_reg.ServerRegister):
     def __init__(self, index):
@@ -94,8 +95,8 @@ reg_temp_act = mqtt_reg.ServerReadOnlyRegister(
     value = None
 )
 
-regs_channels_ext = list(map(lambda e: ExtChannelRegister(e[0]), enumerate(board_config.channels)))
-regs_channels_int = list(map(lambda e: IntChannelRegister(e[0]), enumerate(board_config.channels)))
+regs_channels_ext = list(map(lambda e: ExtChannelRegister(e[0]), enumerate(device_config.channels)))
+regs_channels_int = list(map(lambda e: IntChannelRegister(e[0]), enumerate(device_config.channels)))
 
 registry = mqtt_reg.Registry(
     wifi_ssid=site_config.wifi_ssid,
