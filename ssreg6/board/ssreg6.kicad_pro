@@ -60,7 +60,10 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|144828001|28348001|58153be5-d955-44a2-b464-ecf39c875396|6465fdb1-aa1f-404a-a464-7b8e83a21c98"
+        "courtyards_overlap|145856001|28000001|58153be5-d955-44a2-b464-ecf39c875396|6465fdb1-aa1f-404a-a464-7b8e83a21c98",
+        "lib_footprint_mismatch|122560000|105957500|7893f702-012b-48ae-8e94-385f3446f39f|00000000-0000-0000-0000-000000000000",
+        "starved_thermal|134025000|52000000|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|c1959c92-6dd7-436a-a7d5-fc34955ac843|F.Cu",
+        "starved_thermal|144710000|106710000|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|d82e008d-4ba8-4e89-b94d-ca33f0eeffcb|F.Cu"
       ],
       "meta": {
         "filename": "board_design_settings.json",
