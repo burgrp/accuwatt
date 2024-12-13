@@ -60,8 +60,13 @@
         }
       ],
       "drc_exclusions": [
+        "courtyards_overlap|125520001|56120001|1c1ec0cb-1eda-4b62-86cb-7d6f8e0f8cab|1a52b302-35e2-4fa4-96c7-228a157b26a5",
+        "courtyards_overlap|129479999|59336600|1a52b302-35e2-4fa4-96c7-228a157b26a5|65f0d1a6-ed56-4c00-8a47-a2e8f28874b5",
+        "courtyards_overlap|145120001|47020001|46ced4b8-8837-4451-ba01-2d54edf90b0e|cb0fdccd-d5b0-44b4-8fab-95ec328e8614",
         "courtyards_overlap|145856001|28000001|58153be5-d955-44a2-b464-ecf39c875396|6465fdb1-aa1f-404a-a464-7b8e83a21c98",
+        "courtyards_overlap|148879999|50049999|483c9075-0f67-48c6-b2b9-8229a155ac4b|cb0fdccd-d5b0-44b4-8fab-95ec328e8614",
         "lib_footprint_mismatch|122560000|105957500|7893f702-012b-48ae-8e94-385f3446f39f|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|138000000|59087500|68e7e8b1-c55b-45f5-a474-a5008b7f9850|00000000-0000-0000-0000-000000000000",
         "starved_thermal|134025000|52000000|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|c1959c92-6dd7-436a-a7d5-fc34955ac843|F.Cu",
         "starved_thermal|144710000|106710000|ca0f0cb4-25bc-4cd6-bb93-cdbf3213705c|d82e008d-4ba8-4e89-b94d-ca33f0eeffcb|F.Cu"
       ],
@@ -141,7 +146,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
